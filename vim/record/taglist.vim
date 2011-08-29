@@ -1,0 +1,1 @@
+{"installer_type":"auto","generated_by":"Vimana-2.23","files":[{"checksum":"5929aca911d2b603683767bd371117e7","file":"/Users/jason2506/.vim/doc/taglist.txt"},{"checksum":"5ebf2196223af96a4762cb0b6bf06e46","file":"/Users/jason2506/.vim/plugin/taglist.vim"}],"version":0.2,"package":"taglist.vim"}

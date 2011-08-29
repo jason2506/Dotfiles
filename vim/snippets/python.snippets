@@ -1,0 +1,81 @@
+snippet #co
+	# -*- coding: utf-8 -*-
+
+snippet #!
+	#!/usr/bin/env python
+
+snippet imp
+	import ${1:module}
+# Module Docstring
+snippet docs
+	'''
+	File: ${1:`Filename('$1.py', 'foo.py')`}
+	Author: ${2:`g:snips_author`}
+	Description: ${3}
+	'''
+snippet if
+	if ${1:condition}:
+		${2:pass}
+snippet elif
+	elif ${1:condition}:
+		${2:pass}
+snippet else
+	else:
+		${1:pass}
+snippet while
+	while ${1:condition}:
+		${2:pass}
+snippet for
+	for ${1:item} in ${2:item_list}:
+		${3:pass}
+# New Class
+snippet class
+	class ${1:ClassName}(${2:object}):
+		"""${3:docstring for $1}"""
+		def __init__(self, ${4:arg}):
+			${5:super($1, self).__init__()}
+			self.$4 = $4
+			${6}
+# New Function
+snippet def
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		"""${3:docstring for $1}"""
+		${4:pass}
+snippet deff
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		${3}
+# New Method
+snippet defs
+	def ${1:mname}(self, ${2:arg}):
+		${3:pass}
+# New Property
+snippet property
+	def ${1:foo}():
+		doc = "${2:The $1 property.}"
+		def fget(self):
+			${3:return self._$1}
+		def fset(self, value):
+			${4:self._$1 = value}
+# Lambda
+snippet ld
+	${1:var} = lambda ${2:vars} : ${3:action}
+snippet .
+	self.
+snippet try
+	try:
+		${1:pass}
+	except ${2:Exception} as ${3:e}:
+		${4:raise $3}
+snippet ex
+	except ${1:Exception} as ${2:e}:
+		${3:raise $2}
+snippet fin
+	finally:
+		${1:pass}
+# if __name__ == '__main__':
+snippet main
+	if __name__ == '__main__':
+		${1:main()}
+# __magic__
+snippet _
+	__${1:init}__${2}
