@@ -1,7 +1,7 @@
 """ Basic Setting(s)
 syntax on
 set nocompatible
-set mouse=a
+set mouse=nv
 set ffs=unix,mac,dos
 set number
 set showmode
@@ -52,6 +52,10 @@ set laststatus=2
 set statusline=%<\ %F\ 
 set statusline+=[%{&encoding},\ %{&fileformat}]%m
 set statusline+=%=\ %y\ %l,\ %c\ \(\%P\)\ 
+
+""" Copy & Paste Shortcut(s)
+vnoremap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+nnoremap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
 
 """ Tab Shortcut(s)
 "nnoremap <leader>tn :tabnew<CR>
