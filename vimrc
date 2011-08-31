@@ -54,20 +54,21 @@ set statusline+=[%{&encoding},\ %{&fileformat}]%m
 set statusline+=%=\ %y\ %l,\ %c\ \(\%P\)\ 
 
 """ Copy & Paste Shortcut(s)
-vnoremap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-nnoremap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
+vmap <leader>y y:call system("pbcopy", getreg("\""))<CR>
+vmap <leader>x x:call system("pbcopy", getreg("\""))<CR>
+nmap <leader>p :call setreg("\"",system("pbpaste"))<CR>p
 
 """ Tab Shortcut(s)
-"nnoremap <leader>tn :tabnew<CR>
-nnoremap <leader>tn :tabnew<CR>:NERDTree<CR>:wincmd p<CR>
-nnoremap <leader>tc :tabclose<CR>
-"nnoremap <leader>te :tabedit<SPACE>
-nnoremap <leader>tm :tabmove<SPACE>
+"nmap <leader>tn :tabnew<CR>
+nmap <leader>tn :tabnew<CR>:NERDTree<CR>:wincmd p<CR>
+nmap <leader>tc :tabclose<CR>
+"nmap <leader>te :tabedit<SPACE>
+nmap <leader>tm :tabmove<SPACE>
 
 """ Edit Shortcut(s)
-nnoremap <leader>x xi
-"nnoremap <leader>^ ^i
-"nnoremap <leader>$ $a
+nmap <leader>x xi
+"nmap <leader>^ ^i
+"nmap <leader>$ $a
 
 """ Reset Indent
 function! s:ResetIndent()
@@ -84,9 +85,9 @@ augroup ResetIndent
 augroup END
 
 """ Sidebar Setting(s)
-nnoremap <leader>ed :NERDTreeToggle<CR>:wincmd p<CR>
-nnoremap <leader>et :TlistToggle<CR>
-nnoremap <leader>ee :NERDTreeToggle<CR>:wincmd p<CR>:TlistToggle<CR>
+nmap <leader>ed :NERDTreeToggle<CR>:wincmd p<CR>
+nmap <leader>et :TlistToggle<CR>
+nmap <leader>ee :NERDTreeToggle<CR>:wincmd p<CR>:TlistToggle<CR>
 
 let s:SidebarWidth = 25
 let Tlist_File_Fold_Auto_Close = 1
