@@ -67,8 +67,6 @@ nmap <leader>tm :tabmove<SPACE>
 
 """ Edit Shortcut(s)
 nmap <leader>x xi
-"nmap <leader>^ ^i
-"nmap <leader>$ $a
 
 """ Reset Indent
 function! s:ResetIndent()
@@ -86,16 +84,21 @@ augroup END
 
 """ Sidebar Setting(s)
 nmap <leader>ed :NERDTreeToggle<CR>:wincmd p<CR>
-nmap <leader>et :TlistToggle<CR>
-nmap <leader>ee :NERDTreeToggle<CR>:wincmd p<CR>:TlistToggle<CR>
+" nmap <leader>et :TlistToggle<CR>
+nmap <leader>et :TagbarToggle<CR>
+" nmap <leader>ee :NERDTreeToggle<CR>:wincmd p<CR>:TlistToggle<CR>
+nmap <leader>ee :NERDTreeToggle<CR>:wincmd p<CR>:TagbarToggle<CR>
 
-let s:SidebarWidth = 25
-let Tlist_File_Fold_Auto_Close = 1
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Show_One_File = 1
-let Tlist_Show_Menu = 1
-let Tlist_WinWidth = s:SidebarWidth
+let s:SidebarWidth = 28
+" let Tlist_File_Fold_Auto_Close = 1
+" let Tlist_Exit_OnlyWindow = 1
+" let Tlist_Show_One_File = 1
+" let Tlist_Show_Menu = 1
+" let Tlist_WinWidth = s:SidebarWidth
 let g:NERDTreeWinSize = s:SidebarWidth
+let g:tagbar_width = s:SidebarWidth
+let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+let g:tagbar_left = 1
 
 function! s:CloseLeftmostNERDTree()
   if exists("t:NERDTreeBufName")
