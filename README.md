@@ -28,10 +28,11 @@ To have full features of those dotfiles, you need to install the following packa
 
 ### Bash Profile
 
-* Show Git status on bash prompt
-* Display `ls` command in color
-* Lighter `LS_COLORS` configure
-* Git command auto-completion
+* Show Git status on bash prompt.
+* Display `ls` command in color.
+* Lighter `LS_COLORS` configure.
+* Git command auto-completion.
+* History completion using up/down arrows.
 
 ### Vim Configurates
 

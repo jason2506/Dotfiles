@@ -34,3 +34,7 @@ if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
     . `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
 
+# History completion using up/down arrows
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
+
