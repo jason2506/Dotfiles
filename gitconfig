@@ -1,8 +1,8 @@
 [color]
-	ui = true
+    ui = true
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
     lg = log --graph --oneline
