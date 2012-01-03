@@ -10,6 +10,7 @@ Then, you should create symlinks in your home directory to point to the actual d
 
     $ ln -s `pwd`/vimrc ~/.vimdc
     $ ln -s `pwd`/vim ~/.vim
+    $ ln -s `pwd`/gitconfig ~/.gitconfig
     $ ln -s `pwd`/bash_profile ~/.bash_profile
 
 ## Environment
@@ -33,6 +34,13 @@ To have full features of those dotfiles, you need to install the following packa
 * Lighter `LS_COLORS` configure.
 * Git command auto-completion.
 * History completion using up/down arrows.
+
+### Git Shortcuts
+* `git br` = `git branch`
+* `git ci` = `git commit`
+* `git co` = `git checkout`
+* `git lg` = `git log --graph --oneline`
+* `git st` = `git status`
 
 ### Vim Configurates
 
