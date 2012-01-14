@@ -73,3 +73,4 @@ To have full features of those dotfiles, you need to install the following packa
 * snipMate: [http://www.vim.org/scripts/script.php?script_id=2540](http://www.vim.org/scripts/script.php?script_id=2540)
 * Tagbar: [http://www.vim.org/scripts/script.php?script_id=3465](http://www.vim.org/scripts/script.php?script_id=3465)
 * ZenCoding: [http://www.vim.org/scripts/script.php?script_id=2981](http://www.vim.org/scripts/script.php?script_id=2981)
+* html5.vim: [http://www.vim.org/scripts/script.php?script_id=3236](http://www.vim.org/scripts/script.php?script_id=3236)
