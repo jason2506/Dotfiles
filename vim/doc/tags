@@ -27,6 +27,9 @@
 :AcpEnable	acp.txt	/*:AcpEnable*
 :AcpLock	acp.txt	/*:AcpLock*
 :AcpUnlock	acp.txt	/*:AcpUnlock*
+:CoffeeCompile	coffee-script.txt	/*:CoffeeCompile*
+:CoffeeMake	coffee-script.txt	/*:CoffeeMake*
+:CoffeeRun	coffee-script.txt	/*:CoffeeRun*
 :NERDTree	NERD_tree.txt	/*:NERDTree*
 :NERDTreeClose	NERD_tree.txt	/*:NERDTreeClose*
 :NERDTreeFind	NERD_tree.txt	/*:NERDTreeFind*
@@ -122,6 +125,16 @@ acp-thanks	acp.txt	/*acp-thanks*
 acp-usage	acp.txt	/*acp-usage*
 acp.txt	acp.txt	/*acp.txt*
 autocomplpop	acp.txt	/*autocomplpop*
+coffee-script	coffee-script.txt	/*coffee-script*
+coffee-script-author	coffee-script.txt	/*coffee-script-author*
+coffee-script-commands	coffee-script.txt	/*coffee-script-commands*
+coffee-script-contents	coffee-script.txt	/*coffee-script-contents*
+coffee-script-introduction	coffee-script.txt	/*coffee-script-introduction*
+coffee-script-license	coffee-script.txt	/*coffee-script-license*
+coffee-script-settings	coffee-script.txt	/*coffee-script-settings*
+coffee-script.txt	coffee-script.txt	/*coffee-script.txt*
+compiler-coffee-script	coffee-script.txt	/*compiler-coffee-script*
+ft-coffee-script-syntax	coffee-script.txt	/*ft-coffee-script-syntax*
 g:acp_behavior	acp.txt	/*g:acp_behavior*
 g:acp_behavior-command	acp.txt	/*g:acp_behavior-command*
 g:acp_behavior-completefunc	acp.txt	/*g:acp_behavior-completefunc*
@@ -148,6 +161,8 @@ g:acp_completeoptPreview	acp.txt	/*g:acp_completeoptPreview*
 g:acp_enableAtStartup	acp.txt	/*g:acp_enableAtStartup*
 g:acp_ignorecaseOption	acp.txt	/*g:acp_ignorecaseOption*
 g:acp_mappingDriven	acp.txt	/*g:acp_mappingDriven*
+g:coffee_compile_vert	coffee-script.txt	/*g:coffee_compile_vert*
+g:coffee_make_options	coffee-script.txt	/*g:coffee_make_options*
 g:snippets_dir	snipMate.txt	/*g:snippets_dir*
 g:snips_author	snipMate.txt	/*g:snips_author*
 g:tagbar_autoclose	tagbar.txt	/*g:tagbar_autoclose*

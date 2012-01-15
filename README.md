@@ -74,3 +74,4 @@ To have full features of those dotfiles, you need to install the following packa
 * Tagbar: [http://www.vim.org/scripts/script.php?script_id=3465](http://www.vim.org/scripts/script.php?script_id=3465)
 * ZenCoding: [http://www.vim.org/scripts/script.php?script_id=2981](http://www.vim.org/scripts/script.php?script_id=2981)
 * html5.vim: [http://www.vim.org/scripts/script.php?script_id=3236](http://www.vim.org/scripts/script.php?script_id=3236)
+* vim-coffee-script: [http://www.vim.org/scripts/script.php?script_id=3590](http://www.vim.org/scripts/script.php?script_id=3590)
