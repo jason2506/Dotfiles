@@ -8,7 +8,7 @@ First, clone this repo onto your system:
 
 Then, you should create symlinks in your home directory to point to the actual dotfile files:
 
-    $ ln -s `pwd`/vimrc ~/.vimdc
+    $ ln -s `pwd`/vimrc ~/.vimrc
     $ ln -s `pwd`/vim ~/.vim
     $ ln -s `pwd`/gitconfig ~/.gitconfig
     $ ln -s `pwd`/bash_profile ~/.bash_profile
