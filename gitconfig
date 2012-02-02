@@ -6,3 +6,5 @@
     ci = commit
     st = status
     lg = log --graph --oneline
+[core]
+    excludesfile = ~/.gitignore

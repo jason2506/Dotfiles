@@ -6,6 +6,7 @@ vim:
 
 git:
 	ln -s `pwd`/gitconfig ~/.gitconfig
+	ln -s `pwd`/gitignore ~/.gitignore
 
 bash:
 	ln -s `pwd`/bash_profile ~/.bash_profile

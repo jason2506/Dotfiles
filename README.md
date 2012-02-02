@@ -35,6 +35,10 @@ To have full features of those dotfiles, you need to install the following packa
 * Git command auto-completion.
 * History completion using up/down arrows.
 
+### Git Exclude Files
+* .DS_Store
+* *.swp
+
 ### Git Shortcuts
 * `git br` = `git branch`
 * `git ci` = `git commit`
