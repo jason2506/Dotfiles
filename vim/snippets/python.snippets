@@ -1,8 +1,5 @@
-snippet #co
-	# -*- coding: utf-8 -*-
-
 snippet #!
-	#!/usr/bin/env python
+	#!/usr/bin/python
 
 snippet imp
 	import ${1:module}
@@ -13,23 +10,14 @@ snippet docs
 	Author: ${2:`g:snips_author`}
 	Description: ${3}
 	'''
-snippet if
-	if ${1:condition}:
-		${2:pass}
-snippet elif
-	elif ${1:condition}:
-		${2:pass}
-snippet else
-	else:
-		${1:pass}
-snippet while
+snippet wh
 	while ${1:condition}:
-		${2:pass}
+		${2:# code...}
 snippet for
-	for ${1:item} in ${2:item_list}:
-		${3:pass}
+	for ${1:needle} in ${2:haystack}:
+		${3:# code...}
 # New Class
-snippet class
+snippet cl
 	class ${1:ClassName}(${2:object}):
 		"""${3:docstring for $1}"""
 		def __init__(self, ${4:arg}):
@@ -61,19 +49,36 @@ snippet ld
 	${1:var} = lambda ${2:vars} : ${3:action}
 snippet .
 	self.
-snippet try
+snippet try Try/Except
 	try:
 		${1:pass}
-	except ${2:Exception} as ${3:e}:
+	except ${2:Exception}, ${3:e}:
 		${4:raise $3}
-snippet ex
-	except ${1:Exception} as ${2:e}:
-		${3:raise $2}
-snippet fin
-	finally:
+snippet try Try/Except/Else
+	try:
 		${1:pass}
+	except ${2:Exception}, ${3:e}:
+		${4:raise $3}
+	else:
+		${5:pass}
+snippet try Try/Except/Finally
+	try:
+		${1:pass}
+	except ${2:Exception}, ${3:e}:
+		${4:raise $3}
+	finally:
+		${5:pass}
+snippet try Try/Except/Else/Finally
+	try:
+		${1:pass}
+	except ${2:Exception}, ${3:e}:
+		${4:raise $3}
+	else:
+		${5:pass}
+	finally:
+		${6:pass}
 # if __name__ == '__main__':
-snippet main
+snippet ifmain
 	if __name__ == '__main__':
 		${1:main()}
 # __magic__
