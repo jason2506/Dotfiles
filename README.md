@@ -73,7 +73,6 @@ To have full features of those dotfiles, you need to install the following packa
 
 * AutoComplPop: [http://www.vim.org/scripts/script.php?script_id=1879](http://www.vim.org/scripts/script.php?script_id=1879)
 * NERDTree: [http://www.vim.org/scripts/script.php?script_id=1658](http://www.vim.org/scripts/script.php?script_id=1658)
-* simplecommenter: [http://www.vim.org/scripts/script.php?script_id=3005](http://www.vim.org/scripts/script.php?script_id=3005)
 * snipMate: [http://www.vim.org/scripts/script.php?script_id=2540](http://www.vim.org/scripts/script.php?script_id=2540)
 * Tagbar: [http://www.vim.org/scripts/script.php?script_id=3465](http://www.vim.org/scripts/script.php?script_id=3465)
 * ZenCoding: [http://www.vim.org/scripts/script.php?script_id=2981](http://www.vim.org/scripts/script.php?script_id=2981)
