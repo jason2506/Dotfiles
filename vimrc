@@ -14,7 +14,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 """ Encoding Setting(s)
 set encoding=utf8
 set fileencoding=utf8
-set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1
+set fileencodings=ucs-bom,utf-8,big5,euc-jp,gbk,euc-kr,latin1
 set termencoding=utf-8
 
 """ Color Scheme Setting(s)
