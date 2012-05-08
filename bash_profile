@@ -4,10 +4,11 @@ function git_branch {
     check=`echo $status | grep -i 'branch'`
     cancommit=`echo $status | grep -i 'to be committed'`
     notstage=`echo $status | grep -i 'not staged'`
+    sha=`git rev-parse --short HEAD 2>/dev/null`
 
     if [ -n "$check" ]; then
         if [[ "$check" == *Not* ]]; then
-            branch='none'
+            branch=`echo $sha`
         else
             branch=`echo $check | cut -d ' ' -f 4`
         fi
