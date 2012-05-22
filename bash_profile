@@ -39,3 +39,6 @@ fi
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 
+# Set PATH
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+
