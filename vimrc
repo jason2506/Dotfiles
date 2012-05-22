@@ -8,6 +8,8 @@ set showmode
 
 filetype plugin indent on
 
+call pathogen#infect()
+
 " remember last cursor position
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
