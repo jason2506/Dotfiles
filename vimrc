@@ -8,6 +8,7 @@ set showmode
 
 filetype plugin indent on
 
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 " remember last cursor position
