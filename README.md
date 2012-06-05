@@ -79,3 +79,4 @@ To have full features of those dotfiles, you need to install the following packa
 * html5.vim: [http://www.vim.org/scripts/script.php?script_id=3236](http://www.vim.org/scripts/script.php?script_id=3236)
 * vim-coffee-script: [http://www.vim.org/scripts/script.php?script_id=3590](http://www.vim.org/scripts/script.php?script_id=3590)
 * vim-smartinput: [https://github.com/kana/vim-smartinput](https://github.com/kana/vim-smartinput)
+* vim-pathogen: [https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
