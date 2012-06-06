@@ -8,3 +8,4 @@
     lg = log --graph --oneline
 [core]
     excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
