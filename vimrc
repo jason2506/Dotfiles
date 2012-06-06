@@ -62,6 +62,10 @@ nmap <leader>p :call setreg("\"",system("pbpaste"))<CR>p
 nmap <leader>tn :tabnew<CR>
 nmap <leader>tc :tabclose<CR>
 nmap <leader>tm :tabmove<SPACE>
+nmap > v>
+nmap < v<
+vmap > >gv
+vmap < <gv
 
 """ Reset Indent
 function! s:ResetIndent()

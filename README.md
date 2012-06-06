@@ -66,6 +66,10 @@ To have full features of those dotfiles, you need to install the following packa
 * **\<leader\>ed _(normal mode)_**: Toggle [NERDTree](https://github.com/scrooloose/nerdtree) window.
 * **\<leader\>et _(normal mode)_**: Toggle [Tagbar](https://github.com/majutsushi/tagbar) window.
 * **\<leader\>ee _(normal mode)_**: Toggle [NERDTree](https://github.com/scrooloose/nerdtree) and [Tagbar](https://github.com/majutsushi/tagbar) window at the same time.
+* **> _(visual mode)_**: Indent selected lines.
+* **< _(visual mode)_**: Unindent selected lines.
+* **> _(normal mode)_**: Indent current line.
+* **< _(normal mode)_**: Unindent current line.
 
 ### Vim Plugins
 
