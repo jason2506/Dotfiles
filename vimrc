@@ -92,3 +92,9 @@ let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_left = 1
 let g:nerdtree_tabs_open_on_console_startup = 1
 
+""" Ignore Files
+set wildignore+=*.o,*.obj,*.pyc,*.so
+set wildignore+=*.png,*.jpg,*.gif,*.ico
+set wildignore+=*.swp
+set wildignore+=.DS_Store
+
