@@ -46,3 +46,6 @@
 [submodule "vim/bundle/vim-addon-mw-utils"]
 	path = vim/bundle/vim-addon-mw-utils
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim/bundle/Better-CSS-Syntax-for-Vim"]
+	path = vim/bundle/Better-CSS-Syntax-for-Vim
+	url = git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim.git

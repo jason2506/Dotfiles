@@ -74,6 +74,7 @@ To have full features of those dotfiles, you need to install the following packa
 ### Vim Plugins
 
 * AutoComplPop: <https://github.com/vim-scripts/AutoComplPop>
+* Better-CSS-Syntax-for-Vim: <https://github.com/ChrisYip/Better-CSS-Syntax-for-Vim>
 * CtrlP.vim: <https://github.com/kien/ctrlp.vim>
 * html5.vim: <https://github.com/othree/html5.vim>
 * NERDTree: <https://github.com/scrooloose/nerdtree>
