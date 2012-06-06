@@ -77,13 +77,16 @@ To have full features of those dotfiles, you need to install the following packa
 * CtrlP.vim: <https://github.com/kien/ctrlp.vim>
 * html5.vim: <https://github.com/othree/html5.vim>
 * NERDTree: <https://github.com/scrooloose/nerdtree>
-* snipMate.vim: <https://github.com/msanders/snipmate.vim>
+* snipmate-snippets: <https://github.com/honza/snipmate-snippets>
 * Tagbar: <https://github.com/majutsushi/tagbar>
+* tlib\_vim: <https://github.com/tomtom/tlib_vim>
+* vim-addon-mw-utils: <https://github.com/MarcWeber/vim-addon-mw-utils>
 * vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
 * vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
 * vim-pathogen: <https://github.com/tpope/vim-pathogen>
 * vim-powerline: <https://github.com/Lokaltog/vim-powerline>
 * vim-smartinput: <https://github.com/jason2506/vim-smartinput>
+* vim-snipmate: <https://github.com/garbas/vim-snipmate>
 * vim-surround: <https://github.com/tpope/vim-surround>
 * ZenCoding-vim: <https://github.com/mattn/zencoding-vim>
 
