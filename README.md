@@ -15,15 +15,15 @@ Then, you should create symlinks in your home directory to point to the actual d
 
 ## Environment
 
-Those files are running on Mac OS X, some configure may not work on other systems. For instance, the git auto-complete setting on _bash_profile_ is depend on [Homebrew](http://mxcl.github.com/homebrew/), that's only available in Mac.
+Those files are running on Mac OS X, so some configures may not work on other systems. For instance, the git auto-complete setting on _bash\_profile_ is depend on [Homebrew](http://mxcl.github.com/homebrew/), which's only available in Mac.
 
 To have full features of those dotfiles, you need to install the following packages/softwares:
 
-* Git: [http://git-scm.com/](http://git-scm.com/)
-* Vim: [http://www.vim.org/](http://www.vim.org/)
-* Homebrew **(only available on Mac)**: [http://mxcl.github.com/homebrew/](http://mxcl.github.com/homebrew/)
-* Exuberant Ctags: [http://ctags.sourceforge.net/](http://ctags.sourceforge.net/)
-* bash_completion.d: [http://www.caliban.org/bash/index.shtml#completion](http://www.caliban.org/bash/index.shtml#completion)
+* Git: <http://git-scm.com/>
+* Vim: <http://www.vim.org/>
+* Homebrew **(only available on Mac)**: <http://mxcl.github.com/homebrew/>
+* Exuberant Ctags: <http://ctags.sourceforge.net/>
+* bash\_completion.d: <http://www.caliban.org/bash/index.shtml#completion>
 
 ## Features
 
@@ -36,8 +36,8 @@ To have full features of those dotfiles, you need to install the following packa
 * History completion using up/down arrows.
 
 ### Git Exclude Files
-* .DS_Store
-* *.swp
+* .DS\_Store
+* \*.swp
 
 ### Git Shortcuts
 * `git br` = `git branch`
@@ -54,8 +54,6 @@ To have full features of those dotfiles, you need to install the following packa
 * Enable folding setting.
 * Enable auto indent/smart indent.
 * Indent = 2 whitespaces (html, xml, css, vim) or 4 whitespaces (others).
-* Custom status bar.
-* Auto close the left most NERDTree window.
 
 ### Vim Shortcuts
 
@@ -65,18 +63,23 @@ To have full features of those dotfiles, you need to install the following packa
 * **\<leader\>tn _(normal mode)_**: Shortcut for `:tabnew`.
 * **\<leader\>tc _(normal mode)_**: Shortcut for `:tabclose`.
 * **\<leader\>tm _(normal mode)_**: Shortcut for `:tabmove`.
-* **\<leader\>ed _(normal mode)_**: Toggle [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658) window.
-* **\<leader\>et _(normal mode)_**: Toggle [Tagbar](http://www.vim.org/scripts/script.php?script_id=3465) window.
-* **\<leader\>ee _(normal mode)_**: Toggle [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658) and [Tagbar](http://www.vim.org/scripts/script.php?script_id=3465) window at the same time.
+* **\<leader\>ed _(normal mode)_**: Toggle [NERDTree](https://github.com/scrooloose/nerdtree) window.
+* **\<leader\>et _(normal mode)_**: Toggle [Tagbar](https://github.com/majutsushi/tagbar) window.
+* **\<leader\>ee _(normal mode)_**: Toggle [NERDTree](https://github.com/scrooloose/nerdtree) and [Tagbar](https://github.com/majutsushi/tagbar) window at the same time.
 
 ### Vim Plugins
 
-* AutoComplPop: [http://www.vim.org/scripts/script.php?script_id=1879](http://www.vim.org/scripts/script.php?script_id=1879)
-* NERDTree: [http://www.vim.org/scripts/script.php?script_id=1658](http://www.vim.org/scripts/script.php?script_id=1658)
-* snipMate: [http://www.vim.org/scripts/script.php?script_id=2540](http://www.vim.org/scripts/script.php?script_id=2540)
-* Tagbar: [http://www.vim.org/scripts/script.php?script_id=3465](http://www.vim.org/scripts/script.php?script_id=3465)
-* ZenCoding: [http://www.vim.org/scripts/script.php?script_id=2981](http://www.vim.org/scripts/script.php?script_id=2981)
-* html5.vim: [http://www.vim.org/scripts/script.php?script_id=3236](http://www.vim.org/scripts/script.php?script_id=3236)
-* vim-coffee-script: [http://www.vim.org/scripts/script.php?script_id=3590](http://www.vim.org/scripts/script.php?script_id=3590)
-* vim-smartinput: [https://github.com/kana/vim-smartinput](https://github.com/kana/vim-smartinput)
-* vim-pathogen: [https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
+* AutoComplPop: <https://github.com/vim-scripts/AutoComplPop>
+* CtrlP.vim: <https://github.com/kien/ctrlp.vim>
+* html5.vim: <https://github.com/othree/html5.vim>
+* NERDTree: <https://github.com/scrooloose/nerdtree>
+* snipMate.vim: <https://github.com/msanders/snipmate.vim>
+* Tagbar: <https://github.com/majutsushi/tagbar>
+* vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
+* vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
+* vim-pathogen: <https://github.com/tpope/vim-pathogen>
+* vim-powerline: <https://github.com/Lokaltog/vim-powerline>
+* vim-smartinput: <https://github.com/jason2506/vim-smartinput>
+* vim-surround: <https://github.com/tpope/vim-surround>
+* ZenCoding-vim: <https://github.com/mattn/zencoding-vim>
+
