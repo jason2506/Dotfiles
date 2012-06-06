@@ -52,9 +52,6 @@ set hlsearch
 
 """ Status Bar Setting(s)
 set laststatus=2 
-set statusline=%<\ %F\ 
-set statusline+=[%{&encoding},\ %{&fileformat}]%m
-set statusline+=%=\ %y\ %l,\ %c\ \(\%P\)\ 
 
 """ Copy & Paste Shortcut(s)
 vmap <leader>y y:call system("pbcopy", getreg("\""))<CR>
