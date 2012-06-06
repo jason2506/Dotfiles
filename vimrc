@@ -62,10 +62,8 @@ vmap <leader>x x:call system("pbcopy", getreg("\""))<CR>
 nmap <leader>p :call setreg("\"",system("pbpaste"))<CR>p
 
 """ Tab Shortcut(s)
-"nmap <leader>tn :tabnew<CR>
-nmap <leader>tn :tabnew<CR>:NERDTree<CR>:wincmd p<CR>
+nmap <leader>tn :tabnew<CR>
 nmap <leader>tc :tabclose<CR>
-"nmap <leader>te :tabedit<SPACE>
 nmap <leader>tm :tabmove<SPACE>
 
 """ Reset Indent
@@ -92,19 +90,5 @@ let g:NERDTreeWinSize = s:SidebarWidth
 let g:tagbar_width = s:SidebarWidth
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_left = 1
-
-function! s:CloseLeftmostNERDTree()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
-
-augroup NERDTree
-  autocmd VimEnter * NERDTree | wincmd p
-  autocmd WinEnter * call s:CloseLeftmostNERDTree()
-augroup END
+let g:nerdtree_tabs_open_on_console_startup = 1
 
