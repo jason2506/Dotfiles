@@ -62,6 +62,8 @@ nmap <leader>p :call setreg("\"",system("pbpaste"))<CR>p
 nmap <leader>tn :tabnew<CR>
 nmap <leader>tc :tabclose<CR>
 nmap <leader>tm :tabmove<SPACE>
+
+""" Indent Shortcut(s)
 nmap > v>
 nmap < v<
 vmap > >gv
@@ -93,7 +95,7 @@ let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_left = 1
 let g:nerdtree_tabs_open_on_console_startup = 1
 
-""" Autocomplete Seeting(s)
+""" Autocomplete Setting(s)
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_auto_delimiter = 1
 let g:neocomplcache_enable_auto_select = 1
@@ -108,7 +110,7 @@ endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
-""" Ignore Files
+""" Ignore File(s)
 set wildignore+=*.o,*.obj,*.pyc,*.so
 set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swp
