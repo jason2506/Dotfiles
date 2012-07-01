@@ -86,7 +86,6 @@ To have full features of those dotfiles, you need to install the following packa
 * vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
 * vim-pathogen: <https://github.com/tpope/vim-pathogen>
 * vim-powerline: <https://github.com/Lokaltog/vim-powerline>
-* vim-smartinput: <https://github.com/jason2506/vim-smartinput>
 * vim-snipmate: <https://github.com/garbas/vim-snipmate>
 * vim-surround: <https://github.com/tpope/vim-surround>
 * ZenCoding-vim: <https://github.com/mattn/zencoding-vim>

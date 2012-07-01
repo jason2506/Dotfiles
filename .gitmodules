@@ -13,9 +13,6 @@
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/vim-smartinput"]
-	path = vim/bundle/vim-smartinput
-	url = git://github.com/jason2506/vim-smartinput.git
 [submodule "vim/bundle/vim-pathogen"]
 	path = vim/bundle/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
