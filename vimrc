@@ -64,8 +64,8 @@ nmap <leader>tc :tabclose<CR>
 nmap <leader>tm :tabmove<SPACE>
 
 """ Indent Shortcut(s)
-nmap > v>
-nmap < v<
+nmap > v><ESC>
+nmap < v<<ESC>
 vmap > >gv
 vmap < <gv
 
