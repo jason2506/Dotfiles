@@ -27,7 +27,7 @@ To have full features of those dotfiles, you need to install the following packa
 ### Fish Profile
 
 * Show Git status on prompt.
-* Lighter `LS_COLORS` configure.
+* Lighter color configure.
 
 ### Git Exclude Files
 * .DS\_Store

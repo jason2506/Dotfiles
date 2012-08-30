@@ -32,7 +32,7 @@ end
 set fish_greeting ""
 set BROWSER 'open'
 set PATH /usr/local/bin /usr/local/sbin ~/bin $PATH
-set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
+set -x CLICOLOR 1
 
 set fish_color_git green
 
