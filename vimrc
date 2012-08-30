@@ -1,3 +1,7 @@
+if $SHELL =~ 'bin/fish'
+  set shell=/bin/sh
+endif
+
 """ Basic Setting(s)
 syntax on
 set nocompatible
