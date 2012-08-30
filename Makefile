@@ -11,6 +11,6 @@ git:
 	ln -s `pwd`/gitconfig ~/.gitconfig
 	ln -s `pwd`/gitignore ~/.gitignore
 
-bash:
-	ln -s `pwd`/bash_profile ~/.bash_profile
+fish:
+	ln -s `pwd`/config.fish ~/.config/fish/config.fish
 

@@ -11,29 +11,22 @@ Then, you should create symlinks in your home directory to point to the actual d
     $ ln -s `pwd`/vimrc ~/.vimrc
     $ ln -s `pwd`/vim ~/.vim
     $ ln -s `pwd`/gitconfig ~/.gitconfig
-    $ ln -s `pwd`/bash_profile ~/.bash_profile
+	$ ln -s `pwd`/config.fish ~/.config/fish/config.fish
 
 ## Environment
-
-Those files are running on Mac OS X, so some configures may not work on other systems. For instance, the git auto-complete setting on _bash\_profile_ is depend on [Homebrew](http://mxcl.github.com/homebrew/), which's only available in Mac.
 
 To have full features of those dotfiles, you need to install the following packages/softwares:
 
 * Git: <http://git-scm.com/>
 * Vim: <http://www.vim.org/>
-* Homebrew **(only available on Mac)**: <http://mxcl.github.com/homebrew/>
 * Exuberant Ctags: <http://ctags.sourceforge.net/>
-* bash\_completion.d: <http://www.caliban.org/bash/index.shtml#completion>
 
 ## Features
 
-### Bash Profile
+### Fish Profile
 
 * Show Git status on bash prompt.
-* Display `ls` command in color.
 * Lighter `LS_COLORS` configure.
-* Git command auto-completion.
-* History completion using up/down arrows.
 
 ### Git Exclude Files
 * .DS\_Store
@@ -84,6 +77,7 @@ To have full features of those dotfiles, you need to install the following packa
 * tlib\_vim: <https://github.com/tomtom/tlib_vim>
 * vim-addon-mw-utils: <https://github.com/MarcWeber/vim-addon-mw-utils>
 * vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
+* vim-fish: <https://github.com/aliva/vim-fish>
 * vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
 * vim-pathogen: <https://github.com/tpope/vim-pathogen>
 * vim-powerline: <https://github.com/Lokaltog/vim-powerline>
