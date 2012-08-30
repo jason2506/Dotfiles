@@ -17,6 +17,7 @@ Then, you should create symlinks in your home directory to point to the actual d
 
 To have full features of those dotfiles, you need to install the following packages/softwares:
 
+* Fish: <http://fishshell.com/>
 * Git: <http://git-scm.com/>
 * Vim: <http://www.vim.org/>
 * Exuberant Ctags: <http://ctags.sourceforge.net/>
@@ -25,7 +26,7 @@ To have full features of those dotfiles, you need to install the following packa
 
 ### Fish Profile
 
-* Show Git status on bash prompt.
+* Show Git status on prompt.
 * Lighter `LS_COLORS` configure.
 
 ### Git Exclude Files
