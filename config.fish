@@ -29,6 +29,7 @@ function fish_prompt -d 'custom prompt'
   printf '[%s%s@%s%s%s]%s%s%s$ ' (set_color white) (whoami) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (set_color $fish_color_git) (parse_git_status) (set_color normal)
 end
 
+set fish_greeting ""
 set BROWSER 'open'
 set PATH /usr/local/bin /usr/local/sbin ~/bin $PATH
 set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
