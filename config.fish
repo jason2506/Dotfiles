@@ -31,7 +31,7 @@ end
 
 set fish_greeting ""
 set BROWSER 'open'
-set PATH /usr/local/bin /usr/local/sbin ~/bin ~/.cabal/bin $PATH
+set PATH /usr/local/bin ~/.cabal/bin $PATH
 set -x CLICOLOR 1
 
 set fish_color_git green
