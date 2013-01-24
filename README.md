@@ -73,6 +73,7 @@ To have full features of those dotfiles, you need to install the following packa
 * html5.vim: <https://github.com/othree/html5.vim>
 * NERDTree: <https://github.com/scrooloose/nerdtree>
 * NeoComplCache: <https://github.com/Shougo/neocomplcache>
+* SWIG-syntax: <https://github.com/vim-scripts/SWIG-syntax>
 * Tagbar: <https://github.com/majutsushi/tagbar>
 * vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
 * vim-fish: <https://github.com/aliva/vim-fish>
