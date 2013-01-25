@@ -55,3 +55,6 @@
 [submodule "vim/bundle/SWIG-syntax"]
 	path = vim/bundle/SWIG-syntax
 	url = https://github.com/vim-scripts/SWIG-syntax.git
+[submodule "vim/bundle/vim-cython"]
+	path = vim/bundle/vim-cython
+	url = https://github.com/tshirtman/vim-cython.git
