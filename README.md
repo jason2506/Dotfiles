@@ -74,7 +74,6 @@ To have full features of those dotfiles, you need to install the following packa
 * NERDTree: <https://github.com/scrooloose/nerdtree>
 * NeoComplCache: <https://github.com/Shougo/neocomplcache>
 * SWIG-syntax: <https://github.com/vim-scripts/SWIG-syntax>
-* syntastic: <https://github.com/scrooloose/syntastic>
 * Tagbar: <https://github.com/majutsushi/tagbar>
 * vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
 * vim-cython: <https://github.com/tshirtman/vim-cython>
