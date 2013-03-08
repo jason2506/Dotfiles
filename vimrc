@@ -43,10 +43,10 @@ set tabstop=4
 set softtabstop=4
 
 """ Folding Setting(s)
-set foldenable
-set foldmethod=indent
-set foldcolumn=2
-set foldlevel=99
+"set foldenable
+"set foldmethod=indent
+"set foldcolumn=2
+"set foldlevel=99
 
 """ Search Setting(s)
 set showcmd

@@ -45,7 +45,6 @@ To have full features of those dotfiles, you need to install the following packa
 * Show syntax highlight and line number.
 * Remember last cursor position for each file.
 * Disable backup setting.
-* Enable folding setting.
 * Enable auto indent/smart indent.
 * Indent = 2 whitespaces (html, xml, css, vim) or 4 whitespaces (others).
 
