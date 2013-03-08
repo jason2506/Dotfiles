@@ -78,6 +78,7 @@ To have full features of those dotfiles, you need to install the following packa
 * vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
 * vim-cython: <https://github.com/tshirtman/vim-cython>
 * vim-fish: <https://github.com/aliva/vim-fish>
+* vim-gitgutter: <https://github.com/airblade/vim-gitgutter.git>
 * vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
 * vim-pathogen: <https://github.com/tpope/vim-pathogen>
 * vim-powerline: <https://github.com/Lokaltog/vim-powerline>
