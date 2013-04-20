@@ -82,7 +82,7 @@ To have full features of those dotfiles, you need to install the following packa
 * vim-pathogen: <https://github.com/tpope/vim-pathogen>
 * vim-powerline: <https://github.com/Lokaltog/vim-powerline>
 * vim-snipmate: <https://github.com/garbas/vim-snipmate>
-    * [snip] snipmate-snippets: <https://github.com/honza/snipmate-snippets>
+    * [snip] vim: <https://github.com/honza/vim-snippets>
     * [deps] tlib\_vim: <https://github.com/tomtom/tlib_vim>
     * [deps] vim-addon-mw-utils: <https://github.com/MarcWeber/vim-addon-mw-utils>
 * vim-surround: <https://github.com/tpope/vim-surround>
