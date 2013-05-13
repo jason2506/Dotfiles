@@ -74,6 +74,8 @@ To have full features of those dotfiles, you need to install the following packa
 * NeoComplCache: <https://github.com/Shougo/neocomplcache>
 * SWIG-syntax: <https://github.com/vim-scripts/SWIG-syntax>
 * Tagbar: <https://github.com/majutsushi/tagbar>
+* vim-addon-haskell: <https://github.com/MarcWeber/vim-addon-haskell>
+    * [deps] vim-addon-actions: <https://github.com/MarcWeber/vim-addon-actions>
 * vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
 * vim-cython: <https://github.com/tshirtman/vim-cython>
 * vim-fish: <https://github.com/aliva/vim-fish>

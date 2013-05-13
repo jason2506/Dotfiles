@@ -64,3 +64,9 @@
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "vim/bundle/vim-addon-haskell"]
+	path = vim/bundle/vim-addon-haskell
+	url = https://github.com/MarcWeber/vim-addon-haskell.git
+[submodule "vim/bundle/vim-addon-actions"]
+	path = vim/bundle/vim-addon-actions
+	url = https://github.com/MarcWeber/vim-addon-actions.git
