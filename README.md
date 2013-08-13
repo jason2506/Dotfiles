@@ -69,6 +69,7 @@ To have full features of those dotfiles, you need to install the following packa
 * Better-CSS-Syntax-for-Vim: <https://github.com/ChrisYip/Better-CSS-Syntax-for-Vim>
 * CtrlP.vim: <https://github.com/kien/ctrlp.vim>
 * delimitMate: <https://github.com/Raimondi/delimitMate>
+* emmet-vim: <https://github.com/mattn/emmet-vim>
 * html5.vim: <https://github.com/othree/html5.vim>
 * NERDTree: <https://github.com/scrooloose/nerdtree>
 * NeoComplCache: <https://github.com/Shougo/neocomplcache>
@@ -88,5 +89,4 @@ To have full features of those dotfiles, you need to install the following packa
     * [deps] tlib\_vim: <https://github.com/tomtom/tlib_vim>
     * [deps] vim-addon-mw-utils: <https://github.com/MarcWeber/vim-addon-mw-utils>
 * vim-surround: <https://github.com/tpope/vim-surround>
-* ZenCoding-vim: <https://github.com/mattn/zencoding-vim>
 
