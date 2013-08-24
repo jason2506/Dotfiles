@@ -77,13 +77,13 @@ To have full features of those dotfiles, you need to install the following packa
 * Tagbar: <https://github.com/majutsushi/tagbar>
 * vim-addon-haskell: <https://github.com/MarcWeber/vim-addon-haskell>
     * [deps] vim-addon-actions: <https://github.com/MarcWeber/vim-addon-actions>
+* vim-airline: <https://github.com/bling/vim-airline>
 * vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
 * vim-cython: <https://github.com/tshirtman/vim-cython>
 * vim-fish: <https://github.com/aliva/vim-fish>
 * vim-gitgutter: <https://github.com/airblade/vim-gitgutter.git>
 * vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
 * vim-pathogen: <https://github.com/tpope/vim-pathogen>
-* vim-powerline: <https://github.com/Lokaltog/vim-powerline>
 * vim-snipmate: <https://github.com/garbas/vim-snipmate>
     * [snip] vim: <https://github.com/honza/vim-snippets>
     * [deps] tlib\_vim: <https://github.com/tomtom/tlib_vim>
