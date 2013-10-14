@@ -1,6 +1,4 @@
-if $SHELL =~ 'bin/fish'
-  set shell=/bin/sh
-endif
+set shell=/bin/bash
 
 """ Basic Setting(s)
 syntax on
