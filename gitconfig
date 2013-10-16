@@ -5,7 +5,7 @@
     br = branch
     ci = commit
     st = status
-    lg = log --graph --oneline
+    lg = log --graph --pretty=format:'%C(yellow)%h%C(reset) %C(magenta)[%an]%Creset%C(green)%d%C(reset) %s %C(cyan)(%cr)'
 [core]
     excludesfile = ~/.gitignore
 	editor = /usr/bin/vim
