@@ -7,6 +7,7 @@ set mouse=nv
 set ffs=unix,mac,dos
 set number
 set showmode
+set backspace=indent,eol,start
 
 filetype plugin indent on
 
