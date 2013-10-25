@@ -9,13 +9,45 @@ set number
 set showmode
 set backspace=indent,eol,start
 
-filetype plugin indent on
-
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-
 " remember last cursor position
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+""" Package Management
+if has('vim_starting')
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'vim-scripts/SWIG-syntax'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'MarcWeber/vim-addon-haskell'
+NeoBundle 'MarcWeber/vim-addon-actions'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'tshirtman/vim-cython'
+NeoBundle 'aliva/vim-fish'
+NeoBundle 'airblade/vim-gitgutter.git'
+NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'garbas/vim-snipmate'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'tpope/vim-surround'
+
+filetype plugin indent on
+
+NeoBundleCheck
 
 """ Encoding Setting(s)
 set encoding=utf8

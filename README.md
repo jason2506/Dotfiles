@@ -72,6 +72,7 @@ To have full features of those dotfiles, you need to install the following packa
 * emmet-vim: <https://github.com/mattn/emmet-vim>
 * html5.vim: <https://github.com/othree/html5.vim>
 * NERDTree: <https://github.com/scrooloose/nerdtree>
+* NeoBundle.vim: <https://github.com/Shougo/neobundle.vim>
 * NeoComplCache: <https://github.com/Shougo/neocomplcache>
 * SWIG-syntax: <https://github.com/vim-scripts/SWIG-syntax>
 * Tagbar: <https://github.com/majutsushi/tagbar>
@@ -83,7 +84,6 @@ To have full features of those dotfiles, you need to install the following packa
 * vim-fish: <https://github.com/aliva/vim-fish>
 * vim-gitgutter: <https://github.com/airblade/vim-gitgutter.git>
 * vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
-* vim-pathogen: <https://github.com/tpope/vim-pathogen>
 * vim-snipmate: <https://github.com/garbas/vim-snipmate>
     * [snip] vim: <https://github.com/honza/vim-snippets>
     * [deps] tlib\_vim: <https://github.com/tomtom/tlib_vim>
