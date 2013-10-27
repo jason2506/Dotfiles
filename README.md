@@ -82,7 +82,7 @@ To have full features of those dotfiles, you need to install the following packa
 * vim-airline: <https://github.com/bling/vim-airline>
 * vim-coffee-script: <https://github.com/kchmck/vim-coffee-script>
 * vim-cython: <https://github.com/tshirtman/vim-cython>
-* vim-fish: <https://github.com/aliva/vim-fish>
+* vim-fish: <https://github.com/dag/vim-fish>
 * vim-gitgutter: <https://github.com/airblade/vim-gitgutter.git>
 * vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
 * vim-snipmate: <https://github.com/garbas/vim-snipmate>
