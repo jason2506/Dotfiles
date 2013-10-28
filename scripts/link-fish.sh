@@ -2,5 +2,5 @@
 
 . $( dirname "$0" )/config.cfg
 
-ln -s $root/config.fish ~/.config/fish/config.fish
+ln -s $root/fish/config.fish ~/.config/fish/config.fish
 

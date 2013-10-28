@@ -2,6 +2,6 @@
 
 . $( dirname "$0" )/config.cfg
 
-ln -s $root/vimrc ~/.vimrc
-ln -s $root/vim ~/.vim
+ln -s $root/vim/vimrc ~/.vimrc
+ln -s $root/vim/vim ~/.vim
 

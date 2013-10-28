@@ -8,10 +8,11 @@ First, clone this repo onto your system:
 
 Then, you should create symlinks in your home directory to point to the actual dotfile files:
 
-    $ ln -s `pwd`/vimrc ~/.vimrc
-    $ ln -s `pwd`/vim ~/.vim
-    $ ln -s `pwd`/gitconfig ~/.gitconfig
-	$ ln -s `pwd`/config.fish ~/.config/fish/config.fish
+    $ ln -s `pwd`/vim/vimrc ~/.vimrc
+    $ ln -s `pwd`/vim/vim ~/.vim
+    $ ln -s `pwd`/git/gitconfig ~/.gitconfig
+    $ ln -s `pwd`/git/gitignore ~/.gitignore
+	$ ln -s `pwd`/fish/config.fish ~/.config/fish/config.fish
 
 ## Environment
 
