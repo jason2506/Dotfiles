@@ -22,7 +22,6 @@ To have full features of those dotfiles, you need to install the following packa
 * Git: <http://git-scm.com/>
 * Vim: <http://www.vim.org/>
 * Exuberant Ctags: <http://ctags.sourceforge.net/>
-* Oh My Fish: <https://github.com/bpinto/oh-my-fish>
 
 ## Features
 

@@ -34,7 +34,3 @@ set BROWSER 'open'
 set PATH /usr/local/bin ~/.cabal/bin /usr/local/share/npm/bin $PATH
 set -x CLICOLOR 1
 
-set fish_path ~/.oh-my-fish
-set fish_plugins git
-. $fish_path/oh-my-fish.fish
-
