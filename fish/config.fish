@@ -1,14 +1,14 @@
 function parse_git_status
   set -l git_status (git status 2> /dev/null)
-  set -l check (echo $git_status | grep -i 'branch')
+  set -l check (echo $git_status | grep -i 'branch\|HEAD')
 
   if test $check
     set -l branch ""
-    if test $check = *Not*
-      set -l sha (git rev-parse --short HEAD 2>/dev/null)
-      set branch (echo $sha)
-    else
+    set -l token (echo $check | cut -d ' ' -f 1)
+    if test $token = 'HEAD'
       set branch (echo $check | cut -d ' ' -f 4)
+    else
+      set branch (echo $check | cut -d ' ' -f 3)
     end
 
     set -l notstage (echo $git_status | grep -i 'not staged')
