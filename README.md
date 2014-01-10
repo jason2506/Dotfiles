@@ -12,6 +12,7 @@ Then, you should create symlinks in your home directory to point to the actual d
     $ ln -s `pwd`/vim/vim ~/.vim
     $ ln -s `pwd`/git/gitconfig ~/.gitconfig
     $ ln -s `pwd`/git/gitignore ~/.gitignore
+    $ ln -s `pwd`/screen/screenrc ~/.screenrc
 	$ ln -s `pwd`/fish/config.fish ~/.config/fish/config.fish
 
 ## Environment
@@ -86,7 +87,7 @@ To have full features of those dotfiles, you need to install the following packa
 * vim-gitgutter: <https://github.com/airblade/vim-gitgutter.git>
 * vim-nerdtree-tabs: <https://github.com/jistr/vim-nerdtree-tabs>
 * vim-snipmate: <https://github.com/garbas/vim-snipmate>
-    * [snip] vim: <https://github.com/honza/vim-snippets>
+    * [snip] vim-snippets: <https://github.com/honza/vim-snippets>
     * [deps] tlib\_vim: <https://github.com/tomtom/tlib_vim>
     * [deps] vim-addon-mw-utils: <https://github.com/MarcWeber/vim-addon-mw-utils>
 * vim-surround: <https://github.com/tpope/vim-surround>
