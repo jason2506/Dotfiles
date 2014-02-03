@@ -1,0 +1,23 @@
+{
+  // Details: https://github.com/victorporof/Sublime-JSHint#using-your-own-jshintrc-options
+  // Example: https://github.com/jshint/jshint/blob/master/examples/.jshintrc
+  // Documentation: http://www.jshint.com/docs/
+  "boss": true,
+  "browser": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "esnext": true,
+  "immed": true,
+  "indent": 4,
+  "jquery": true,
+  "maxlen": 80,
+  "noarg": true,
+  "onevar": true,
+  "predef": ["console", "chrome"],
+  "quotmark": "single",
+  "trailing": true,
+  "undef": true,
+  "unused": true
+}
