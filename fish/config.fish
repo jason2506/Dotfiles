@@ -41,3 +41,7 @@ if begin; status --is-interactive; and type -f pyenv > /dev/null; end
     . (pyenv init -|psub)
 end
 
+if begin; status --is-interactive; and type -f pyenv-virtualenv-init > /dev/null; end
+    . (pyenv virtualenv-init -|psub)
+end
+
