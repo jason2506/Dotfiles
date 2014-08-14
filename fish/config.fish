@@ -36,6 +36,8 @@ set -x PYENV_ROOT ~/.pyenv
 set -x PATH ~/.cabal/bin $PYENV_ROOT/bin /usr/local/bin /usr/local/share/npm/bin $PATH
 
 set -x CLICOLOR 1
+set -x LS_COLORS "di=00;36"
+set fish_color_command cyan
 
 if begin; status --is-interactive; and type -f pyenv > /dev/null; end
     . (pyenv init -|psub)
