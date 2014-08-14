@@ -31,6 +31,13 @@ end
 
 set fish_greeting ""
 set BROWSER 'open'
-set PATH /usr/local/bin ~/.cabal/bin /usr/local/share/npm/bin $PATH
+
+set -x PYENV_ROOT ~/.pyenv
+set -x PATH ~/.cabal/bin $PYENV_ROOT/bin /usr/local/bin /usr/local/share/npm/bin $PATH
+
 set -x CLICOLOR 1
+
+if begin; status --is-interactive; and type -f pyenv > /dev/null; end
+    . (pyenv init -|psub)
+end
 
