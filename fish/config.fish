@@ -32,6 +32,9 @@ end
 set fish_greeting ""
 set BROWSER 'open'
 
+set -x LC_ALL zh_TW.UTF-8
+set -x LANG zh_TW.UTF-8
+
 set -x PYENV_ROOT ~/.pyenv
 set -x PATH ~/.cabal/bin $PYENV_ROOT/bin /usr/local/bin /usr/local/share/npm/bin $PATH
 
