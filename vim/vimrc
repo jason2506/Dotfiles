@@ -142,3 +142,8 @@ set wildignore+=*.o,*.obj,*.pyc,*.so
 set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swp
 set wildignore+=.DS_Store
+
+
+""" Flake Setting(s)
+let g:PyFlakeOnWrite = 1
+let g:PyFlakeMaxLineLength = 100
