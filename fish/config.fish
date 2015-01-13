@@ -32,15 +32,23 @@ end
 set fish_greeting ""
 set BROWSER 'open'
 
-set -x LC_ALL zh_TW.UTF-8
+set -x LANGUAGE zh_TW:zh:en_US:en
 set -x LANG zh_TW.UTF-8
+set -x LC_COLLATE zh_TW.UTF-8
+set -x LC_CTYPE zh_TW.UTF-8
+set -x LC_MESSAGES zh_TW.UTF-8
+set -x LC_MONETARY zh_TW.UTF-8
+set -x LC_NUMERIC zh_TW.UTF-8
+set -x LC_TIME zh_TW.UTF-8
+set -x LC_ALL zh_TW.UTF-8
 
 set -x PYENV_ROOT ~/.pyenv
 set -x PATH ~/.cabal/bin $PYENV_ROOT/bin /usr/local/bin /usr/local/share/npm/bin $PATH
 
+set -x TERM xterm-256color
 set -x CLICOLOR 1
 set -x LS_COLORS "di=00;36"
-set fish_color_command cyan
+set fish_color_command yellow
 
 if begin; status --is-interactive; and type -f pyenv > /dev/null; end
     . (pyenv init -|psub)
