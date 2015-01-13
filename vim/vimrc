@@ -30,7 +30,6 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'othree/html5.vim'
-"NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'vim-scripts/SWIG-syntax'
 NeoBundle 'majutsushi/tagbar'
@@ -41,7 +40,6 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tshirtman/vim-cython'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'airblade/vim-gitgutter.git'
-"NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'tomtom/tlib_vim'
@@ -126,23 +124,17 @@ augroup ResetIndent
 augroup END
 
 """ Sidebar Setting(s)
-"nmap <leader>ed :NERDTreeToggle<CR>:wincmd p<CR>
 nmap <leader>et :TagbarToggle<CR>
-"nmap <leader>ee :NERDTreeToggle<CR>:wincmd p<CR>:TagbarToggle<CR>
 
 let s:SidebarWidth = 30
 let g:tagbar_width = s:SidebarWidth
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
-"let g:tagbar_left = 1
-"let g:NERDTreeWinSize = s:SidebarWidth
-"let g:nerdtree_tabs_open_on_console_startup = 1
 
 """ Ignore File(s)
 set wildignore+=*.o,*.obj,*.pyc,*.so
 set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swp
 set wildignore+=.DS_Store
-
 
 """ Flake Setting(s)
 let g:PyFlakeOnWrite = 1
