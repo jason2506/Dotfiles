@@ -8,6 +8,8 @@ set ffs=unix,mac,dos
 set number
 set showmode
 set backspace=indent,eol,start
+set t_Co=256
+set completeopt-=preview
 
 " remember last cursor position
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
