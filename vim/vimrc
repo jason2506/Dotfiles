@@ -46,14 +46,15 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'andviro/flake8-vim'
 
 filetype plugin indent on
 
 NeoBundleCheck
 
 """ Encoding Setting(s)
-set encoding=utf8
-set fileencoding=utf8
+set encoding=utf-8
+set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,big5,euc-jp,gbk,euc-kr,latin1
 set termencoding=utf-8
 
@@ -88,7 +89,7 @@ set showmatch
 set hlsearch
 
 """ Status Bar Setting(s)
-set laststatus=2 
+set laststatus=2
 
 "let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -155,4 +156,3 @@ set wildignore+=*.o,*.obj,*.pyc,*.so
 set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swp
 set wildignore+=.DS_Store
-
