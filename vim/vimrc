@@ -102,10 +102,10 @@ nmap <leader>p :call setreg("\"",system("pbpaste"))<CR>p
 
 """ Tab Shortcut(s)
 nmap <leader>t :tabnew<CR>
+nmap <S-h> gT
+nmap <S-l> gt
 
 """ Indent Shortcut(s)
-nmap > v><ESC>
-nmap < v<<ESC>
 vmap > >gv
 vmap < <gv
 
@@ -124,8 +124,7 @@ augroup ResetIndent
 augroup END
 
 """ Sidebar Setting(s)
-nmap <leader>et :TagbarToggle<CR>
-
+nmap <leader>g :TagbarToggle<CR>
 let s:SidebarWidth = 30
 let g:tagbar_width = s:SidebarWidth
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
