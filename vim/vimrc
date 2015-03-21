@@ -44,7 +44,8 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'tomtom/tlib_vim' " used by vim-snipmate
 NeoBundle 'MarcWeber/vim-addon-mw-utils' " used by vim-snipmate
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'andviro/flake8-vim'
+"NeoBundle 'andviro/flake8-vim'
+NeoBundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 
@@ -135,5 +136,12 @@ set wildignore+=*.swp
 set wildignore+=.DS_Store
 
 """ Flake Setting(s)
-let g:PyFlakeOnWrite = 1
-let g:PyFlakeMaxLineLength = 100
+"let g:PyFlakeOnWrite = 1
+"let g:PyFlakeMaxLineLength = 100
+
+""" Syntastic Setting(s)
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 5
