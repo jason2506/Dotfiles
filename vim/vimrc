@@ -102,8 +102,10 @@ nmap <leader>p :call setreg("\"",system("pbpaste"))<CR>p
 
 """ Tab Shortcut(s)
 nmap <leader>t :tabnew<CR>
-nmap <S-h> gT
-nmap <S-l> gt
+
+""" Buffer Shortcut(s)
+nmap bt :bnext<CR>
+nmap bT :bprev<CR>
 
 """ Indent Shortcut(s)
 vmap > >gv
