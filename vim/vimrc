@@ -24,8 +24,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-call neobundle#end()
-
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'mattn/emmet-vim'
@@ -50,6 +48,8 @@ NeoBundle 'scrooloose/syntastic'
 filetype plugin indent on
 
 NeoBundleCheck
+
+call neobundle#end()
 
 """ Encoding Setting(s)
 set encoding=utf-8
@@ -147,3 +147,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 5
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
