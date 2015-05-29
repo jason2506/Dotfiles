@@ -136,6 +136,7 @@ set wildignore+=*.o,*.obj,*.pyc,*.so
 set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swp
 set wildignore+=.DS_Store
+set wildignore+=*/CMakeFiles/*,*.cmake,CMakeCache.txt
 
 """ Flake Setting(s)
 "let g:PyFlakeOnWrite = 1
