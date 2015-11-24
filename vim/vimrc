@@ -44,6 +44,7 @@ NeoBundle 'MarcWeber/vim-addon-mw-utils' " used by vim-snipmate
 NeoBundle 'tpope/vim-surround'
 "NeoBundle 'andviro/flake8-vim'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Glench/Vim-Jinja2-Syntax'
 
 filetype plugin indent on
 
