@@ -1,6 +1,0 @@
-startup_message off
-
-defutf8 on
-
-caption always "%{=u .r} %-w%<%{=ub .Y}%n %t%{=u .r}%+w "
-hardstatus alwayslastline "%{= .K} [%l]%<%=%{= .Y}$USER%{= .R}@%H %=%{= .m} %Y/%m/%d%{= .M} %0c "
