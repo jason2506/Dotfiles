@@ -2,5 +2,6 @@
 
 . $( dirname "$0" )/config.cfg
 
-ln -s $root/tmux/tmux.conf ~/.tmux.conf
+set -ex
 
+ln -s $root/.tmux.conf ~/.tmux.conf
