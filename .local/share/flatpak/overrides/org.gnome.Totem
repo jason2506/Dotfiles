@@ -1,0 +1,16 @@
+[Context]
+shared=!ipc;!network
+sockets=!fallback-x11;!x11
+devices=!all
+filesystems=!xdg-run/gvfs;!xdg-run/gvfsd;!/run/media;!xdg-videos;!xdg-pictures;!xdg-download
+
+[System Bus Policy]
+org.freedesktop.Avahi=none
+
+[Session Bus Policy]
+org.gtk.vfs=none
+org.gnome.Shell=none
+org.gnome.Nautilus=none
+org.gtk.vfs.*=none
+org.gnome.OnlineAccounts=none
+org.gnome.SessionManager=none

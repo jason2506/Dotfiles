@@ -1,0 +1,8 @@
+[Context]
+shared=!ipc
+sockets=!pulseaudio
+devices=!all;dri
+filesystems=!xdg-public-share;!xdg-videos;!xdg-pictures;!xdg-download;!xdg-music;!xdg-desktop;!xdg-documents
+
+[Session Bus Policy]
+org.freedesktop.portal.Fcitx=none

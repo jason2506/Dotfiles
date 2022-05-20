@@ -1,0 +1,7 @@
+[Context]
+devices=!all;dri
+features=!bluetooth
+filesystems=!xdg-music:ro;!xdg-pictures:ro;!xdg-run/app/com.discordapp.Discord:create
+
+[System Bus Policy]
+org.freedesktop.NetworkManager=none
