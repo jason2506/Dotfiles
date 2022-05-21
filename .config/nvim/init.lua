@@ -1,8 +1,8 @@
 local o = vim.o
 local bo = vim.bo
 local au = vim.api.nvim_create_autocmd
-local map = vim.api.nvim_set_keymap
-local map_opts = {
+local keymap = vim.keymap
+local keymap_opts = {
   noremap = true,
   silent = true,
 }
@@ -71,14 +71,14 @@ au({ 'BufNewFile', 'BufFilePre', 'BufRead' }, {
 })
 
 -- Tab Shortcut(s)
-map('n', '<leader>t', ':tabnew<CR>', map_opts)
+keymap.set('n', '<leader>t', ':tabnew<CR>', keymap_opts)
 
 -- Buffer Shortcut(s)
-map('n', 'bt', ':bnext<CR>', map_opts)
-map('n', 'bT', ':bprev<CR>', map_opts)
+keymap.set('n', 'bt', ':bnext<CR>', keymap_opts)
+keymap.set('n', 'bT', ':bprev<CR>', keymap_opts)
 
 -- Indent Shortcut(s)
-map('v', '>', '>gv', map_opts)
-map('v', '<', '<gv', map_opts)
+keymap.set('v', '>', '>gv', keymap_opts)
+keymap.set('v', '<', '<gv', keymap_opts)
 
 require('plugins')

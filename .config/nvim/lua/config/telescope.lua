@@ -1,6 +1,13 @@
 local telescope = require('telescope')
 local actions = require('telescope.actions')
+local builtin = require('telescope.builtin')
 local themes = require('telescope.themes')
+
+local keymap = vim.keymap
+local keymap_opts = {
+  noremap = true,
+  silent = true,
+}
 
 telescope.setup({
   defaults = themes.get_ivy({
@@ -36,13 +43,7 @@ telescope.setup({
 
 telescope.load_extension('ui-select')
 
-local map = vim.api.nvim_set_keymap
-local map_opts = {
-  noremap = true,
-  silent = true,
-}
-
-map('n', '<leader>ff', '<cmd>lua require("telescope.builtin").find_files()<cr>', map_opts)
-map('n', '<leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<cr>', map_opts)
-map('n', '<leader>fs', '<cmd>lua require("telescope.builtin").lsp_dynamic_workspace_symbols()<cr>', map_opts)
-map('n', '<leader>ft', '<cmd>lua require("telescope.builtin").treesitter()<cr>', map_opts)
+keymap.set('n', '<leader>ff', builtin.find_files, keymap_opts)
+keymap.set('n', '<leader>fg', builtin.live_grep, keymap_opts)
+keymap.set('n', '<leader>fs', builtin.lsp_dynamic_workspace_symbols, keymap_opts)
+keymap.set('n', '<leader>ft', builtin.treesitter, keymap_opts)

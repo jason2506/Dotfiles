@@ -10,23 +10,27 @@ local lsp_servers = {
   pyright = require('config.lsp.pyright'),
 }
 
-local map = vim.api.nvim_set_keymap
-local buf_map = vim.api.nvim_buf_set_keymap
-local map_opts = {
+local keymap = vim.keymap
+local keymap_opts = {
   noremap = true,
   silent = true,
 }
 
-map('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', map_opts)
-map('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', map_opts)
+local diagnostic = vim.diagnostic
+keymap.set('n', '[d', diagnostic.goto_prev, keymap_opts)
+keymap.set('n', ']d', diagnostic.goto_next, keymap_opts)
+
+local telescope_builtin = require('telescope.builtin')
+local lsp_buf = vim.lsp.buf
 
 local function on_attach (_, bufnr)
-  buf_map(bufnr, 'n', 'gd', '<cmd>lua require("telescope.builtin").lsp_definitions()<CR>', map_opts)
-  buf_map(bufnr, 'n', 'gi', '<cmd>lua require("telescope.builtin").lsp_implementations()<CR>', map_opts)
-  buf_map(bufnr, 'n', 'gr', '<cmd>lua require("telescope.builtin").lsp_references()<CR>', map_opts)
-  buf_map(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', map_opts)
-  buf_map(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', map_opts)
-  buf_map(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', map_opts)
+  local keymap_opts_with_buf = vim.tbl_extend('force', keymap_opts, { buffer = bufnr })
+  keymap.set('n', 'gd', telescope_builtin.lsp_definitions, keymap_opts_with_buf)
+  keymap.set('n', 'gi', telescope_builtin.lsp_implementations, keymap_opts_with_buf)
+  keymap.set('n', 'gr', telescope_builtin.lsp_references, keymap_opts_with_buf)
+  keymap.set('n', 'K', lsp_buf.hover, keymap_opts_with_buf)
+  keymap.set('n', '<space>ca', lsp_buf.code_action, keymap_opts_with_buf)
+  keymap.set('n', '<space>rn', lsp_buf.rename, keymap_opts_with_buf)
 end
 
 local lsp_installer = require('nvim-lsp-installer')
