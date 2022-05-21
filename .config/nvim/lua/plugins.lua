@@ -15,6 +15,14 @@ local function setup_packer (use)
     'nvim-lualine/lualine.nvim',
     config = [[ require('config.lualine') ]],
   })
+  use({
+    'akinsho/bufferline.nvim',
+    tag = "v2.*",
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+    },
+    config = [[ require('config.bufferline') ]]
+  })
 
   -- Syntax Parsing
   use({
