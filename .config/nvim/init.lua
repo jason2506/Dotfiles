@@ -14,6 +14,7 @@ o.cursorline = true
 o.swapfile = false
 o.number = true
 o.mouse = 'a'
+o.clipboard = 'unnamedplus'
 
 -- Ignore File(s)
 local wildignores = {
