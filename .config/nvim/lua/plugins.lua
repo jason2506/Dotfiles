@@ -82,6 +82,13 @@ local function setup_packer (use)
     config = [[ require('config.autopairs') ]],
   })
 
+  -- Terminal Integration
+  use {
+    'akinsho/toggleterm.nvim',
+    tag = 'v1.*',
+    config = [[ require('config.toggleterm') ]],
+  }
+
   -- Jump
   use {
     'phaazon/hop.nvim',
