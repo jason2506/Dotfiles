@@ -12,3 +12,6 @@
 [user]
 	email = jason2506@users.noreply.github.com
 	name = Chi-En Wu
+	signingkey = 03B2738DF54AD52F
+[commit]
+	gpgsign = true
