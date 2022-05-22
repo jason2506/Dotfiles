@@ -22,5 +22,8 @@ au('TermOpen', {
     keymap.set('t', '<c-w><down>', '<c-\\><c-n><c-w><down>', keymap_opts)
     keymap.set('t', '<c-w><left>', '<c-\\><c-n><c-w><left>', keymap_opts)
     keymap.set('t', '<c-w><right>', '<c-\\><c-n><c-w><right>', keymap_opts)
+
+    keymap.set('t', '<c-w>[', '<c-\\><c-n>', keymap_opts)
+    keymap.set('n', 'q', 'i', keymap_opts)
   end
 })
