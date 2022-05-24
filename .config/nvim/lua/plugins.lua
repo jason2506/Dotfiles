@@ -6,7 +6,10 @@ local function setup_packer (use)
   use({ 'farmergreg/vim-lastplace' })
 
   -- User Interface
-  use({ 'airblade/vim-gitgutter' })
+  use({
+    'lewis6991/gitsigns.nvim',
+    config = [[ require('config.gitsigns') ]],
+  })
   use({
     'folke/tokyonight.nvim',
     config = [[ require('config.tokyonight') ]],
