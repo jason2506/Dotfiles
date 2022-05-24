@@ -26,6 +26,10 @@ local function setup_packer (use)
     },
     config = [[ require('config.bufferline') ]]
   })
+  use({
+    'lukas-reineke/indent-blankline.nvim',
+    config = [[ require('config.indent-blankline') ]]
+  })
 
   -- Syntax Parsing
   use({
