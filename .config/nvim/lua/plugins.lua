@@ -70,7 +70,6 @@ local function setup_packer (use)
       'williamboman/nvim-lsp-installer',
       'j-hui/fidget.nvim',
       'ray-x/lsp_signature.nvim',
-      'kosayoda/nvim-lightbulb',
     },
     config = [[ require('config.lsp') ]],
   })
