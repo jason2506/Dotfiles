@@ -28,7 +28,11 @@ local function setup_packer (use)
   })
   use({
     'lukas-reineke/indent-blankline.nvim',
-    config = [[ require('config.indent-blankline') ]]
+    config = [[ require('config.indent-blankline') ]],
+  })
+  use({
+    'rcarriga/nvim-notify',
+    config = [[ require('config.notify') ]],
   })
 
   -- Syntax Parsing
