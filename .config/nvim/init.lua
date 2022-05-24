@@ -13,7 +13,7 @@ o.completeopt = 'menuone,noinsert,noselect'
 o.cursorline = true
 o.swapfile = false
 o.number = true
-o.mouse = 'a'
+o.mouse = 'nv'
 o.clipboard = 'unnamedplus'
 
 -- Ignore File(s)
