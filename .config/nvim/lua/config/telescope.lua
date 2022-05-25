@@ -35,12 +35,17 @@ telescope.setup({
     },
   },
   extensions = {
+    file_browser = {
+      path = '%:p:h',
+      select_buffer = true,
+    },
     ['ui-select'] = {
       themes.get_cursor(),
     },
   },
 })
 
+telescope.load_extension('file_browser')
 telescope.load_extension('ui-select')
 
 keymap.set('n', '<leader>ff', builtin.find_files, keymap_opts)
@@ -51,7 +56,7 @@ keymap.set('n', '<leader>fa', function ()
     }
   })
 end, keymap_opts)
-keymap.set('n', '<leader>fb', builtin.buffers, keymap_opts)
+keymap.set('n', '<leader>fb', telescope.extensions.file_browser.file_browser, keymap_opts)
 keymap.set('n', '<leader>fd', builtin.diagnostics, keymap_opts)
 keymap.set('n', '<leader>fg', builtin.live_grep, keymap_opts)
 keymap.set('n', '<leader>fh', builtin.help_tags, keymap_opts)

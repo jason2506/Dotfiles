@@ -109,6 +109,7 @@ local function setup_packer (use)
     'nvim-telescope/telescope.nvim',
     requires = {
       'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope-file-browser.nvim',
       'nvim-telescope/telescope-ui-select.nvim',
     },
     config = [[ require('config.telescope') ]],
