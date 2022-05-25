@@ -17,6 +17,7 @@ local keymap_opts = {
 }
 
 local diagnostic = vim.diagnostic
+keymap.set('n', '<space>e', diagnostic.open_float, keymap_opts)
 keymap.set('n', '[d', diagnostic.goto_prev, keymap_opts)
 keymap.set('n', ']d', diagnostic.goto_next, keymap_opts)
 
