@@ -99,4 +99,19 @@ keymap.set('n', '<leader>cd', function ()
   end)
 end, keymap_opts)
 
+keymap.set('n', '<leader>e', function ()
+  local default_path = vim.fn.expand('%:~:.')
+  local input_opts = {
+    prompt = 'Edit file: ',
+    default = default_path,
+    completion = 'file',
+  }
+
+  vim.ui.input(input_opts, function (target_path)
+    if target_path then
+      vim.cmd(':e ' .. target_path)
+    end
+  end)
+end, keymap_opts)
+
 require('plugins')
