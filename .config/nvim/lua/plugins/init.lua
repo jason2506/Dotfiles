@@ -8,15 +8,15 @@ local function setup_packer (use)
   -- User Interface
   use({
     'lewis6991/gitsigns.nvim',
-    config = [[ require('config.gitsigns') ]],
+    config = [[ require('plugins.gitsigns') ]],
   })
   use({
     'folke/tokyonight.nvim',
-    config = [[ require('config.tokyonight') ]],
+    config = [[ require('plugins.tokyonight') ]],
   })
   use({
     'nvim-lualine/lualine.nvim',
-    config = [[ require('config.lualine') ]],
+    config = [[ require('plugins.lualine') ]],
   })
   use({
     'akinsho/bufferline.nvim',
@@ -24,15 +24,15 @@ local function setup_packer (use)
     requires = {
       'kyazdani42/nvim-web-devicons',
     },
-    config = [[ require('config.bufferline') ]]
+    config = [[ require('plugins.bufferline') ]]
   })
   use({
     'lukas-reineke/indent-blankline.nvim',
-    config = [[ require('config.indent-blankline') ]],
+    config = [[ require('plugins.indent-blankline') ]],
   })
   use({
     'rcarriga/nvim-notify',
-    config = [[ require('config.notify') ]],
+    config = [[ require('plugins.notify') ]],
   })
 
   -- Syntax Parsing
@@ -46,7 +46,7 @@ local function setup_packer (use)
       'BufRead',
       'InsertEnter',
     },
-    config = [[ require('config.treesitter') ]],
+    config = [[ require('plugins.treesitter') ]],
   })
   use({
     'nvim-treesitter/nvim-treesitter-context',
@@ -71,7 +71,7 @@ local function setup_packer (use)
       { 'hrsh7th/cmp-vsnip', after = 'nvim-cmp' },
       { 'hrsh7th/vim-vsnip' },
     },
-    config = [[ require('config.cmp') ]],
+    config = [[ require('plugins.cmp') ]],
   })
 
   use({
@@ -82,28 +82,28 @@ local function setup_packer (use)
       'j-hui/fidget.nvim',
       'ray-x/lsp_signature.nvim',
     },
-    config = [[ require('config.lsp') ]],
+    config = [[ require('plugins.lsp') ]],
   })
 
   -- Auto Pairs
   use({
     'windwp/nvim-autopairs',
     after = 'nvim-cmp',
-    config = [[ require('config.autopairs') ]],
+    config = [[ require('plugins.autopairs') ]],
   })
 
   -- Terminal Integration
   use {
     'akinsho/toggleterm.nvim',
     tag = 'v1.*',
-    config = [[ require('config.toggleterm') ]],
+    config = [[ require('plugins.toggleterm') ]],
   }
 
   -- Jump
   use {
     'phaazon/hop.nvim',
     branch = 'v1',
-    config = [[ require('config.hop') ]],
+    config = [[ require('plugins.hop') ]],
   }
   use({
     'nvim-telescope/telescope.nvim',
@@ -112,7 +112,7 @@ local function setup_packer (use)
       'nvim-telescope/telescope-file-browser.nvim',
       'nvim-telescope/telescope-ui-select.nvim',
     },
-    config = [[ require('config.telescope') ]],
+    config = [[ require('plugins.telescope') ]],
   })
 end
 

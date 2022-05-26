@@ -1,13 +1,13 @@
 local lsp_servers = {
   -- Lua
-  sumneko_lua = require('config.lsp.sumneko_lua'),
+  sumneko_lua = require('plugins.lsp.sumneko_lua'),
 
   -- JacaScript / TypeScript
-  tsserver = require('config.lsp.tsserver'),
-  eslint = require('config.lsp.eslint'),
+  tsserver = require('plugins.lsp.tsserver'),
+  eslint = require('plugins.lsp.eslint'),
 
   -- Python
-  pyright = require('config.lsp.pyright'),
+  pyright = require('plugins.lsp.pyright'),
 }
 
 local keymap = vim.keymap
