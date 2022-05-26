@@ -1,16 +1,12 @@
-local keymap = vim.keymap
-local keymap_opts = {
-  noremap = true,
-  silent = true,
-}
+local keymap = require('utils.keymap')
 
-keymap.set('n', '<leader>t', ':tabnew<CR>', keymap_opts)
+keymap.set('n', '<leader>t', ':tabnew<CR>')
 
-keymap.set('n', 'bt', ':bnext<CR>', keymap_opts)
-keymap.set('n', 'bT', ':bprev<CR>', keymap_opts)
+keymap.set('n', 'bt', ':bnext<CR>')
+keymap.set('n', 'bT', ':bprev<CR>')
 
-keymap.set('v', '>', '>gv', keymap_opts)
-keymap.set('v', '<', '<gv', keymap_opts)
+keymap.set('v', '>', '>gv')
+keymap.set('v', '<', '<gv')
 
 keymap.set('n', '<leader>cd', function ()
   local default_path = vim.fn.expand('%:~:.:h')
@@ -25,7 +21,7 @@ keymap.set('n', '<leader>cd', function ()
       vim.api.nvim_set_current_dir(target_path)
     end
   end)
-end, keymap_opts)
+end)
 
 keymap.set('n', '<leader>e', function ()
   local default_path = vim.fn.expand('%:~:.')
@@ -40,4 +36,4 @@ keymap.set('n', '<leader>e', function ()
       vim.cmd(':tabedit ' .. target_path)
     end
   end)
-end, keymap_opts)
+end)

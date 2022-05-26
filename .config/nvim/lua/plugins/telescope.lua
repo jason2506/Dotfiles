@@ -3,11 +3,7 @@ local actions = require('telescope.actions')
 local builtin = require('telescope.builtin')
 local themes = require('telescope.themes')
 
-local keymap = vim.keymap
-local keymap_opts = {
-  noremap = true,
-  silent = true,
-}
+local keymap = require('utils.keymap')
 
 telescope.setup({
   defaults = themes.get_ivy({
@@ -48,17 +44,17 @@ telescope.setup({
 telescope.load_extension('file_browser')
 telescope.load_extension('ui-select')
 
-keymap.set('n', '<leader>ff', builtin.find_files, keymap_opts)
+keymap.set('n', '<leader>ff', builtin.find_files)
 keymap.set('n', '<leader>fa', function ()
   builtin.find_files({
     find_command = {
       'rg', '--hidden', '--no-ignore', '--files',
     }
   })
-end, keymap_opts)
-keymap.set('n', '<leader>fb', telescope.extensions.file_browser.file_browser, keymap_opts)
-keymap.set('n', '<leader>fd', builtin.diagnostics, keymap_opts)
-keymap.set('n', '<leader>fg', builtin.live_grep, keymap_opts)
-keymap.set('n', '<leader>fh', builtin.help_tags, keymap_opts)
-keymap.set('n', '<leader>fs', builtin.lsp_dynamic_workspace_symbols, keymap_opts)
-keymap.set('n', '<leader>ft', builtin.treesitter, keymap_opts)
+end)
+keymap.set('n', '<leader>fb', telescope.extensions.file_browser.file_browser)
+keymap.set('n', '<leader>fd', builtin.diagnostics)
+keymap.set('n', '<leader>fg', builtin.live_grep)
+keymap.set('n', '<leader>fh', builtin.help_tags)
+keymap.set('n', '<leader>fs', builtin.lsp_dynamic_workspace_symbols)
+keymap.set('n', '<leader>ft', builtin.treesitter)

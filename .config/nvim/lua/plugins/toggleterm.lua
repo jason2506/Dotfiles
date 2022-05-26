@@ -3,10 +3,8 @@ require('toggleterm').setup({
 })
 
 local au = vim.api.nvim_create_autocmd
-local keymap = vim.keymap
+local keymap = require('utils.keymap')
 local keymap_opts = {
-  noremap = true,
-  silent = true,
   buffer = true,
 }
 
