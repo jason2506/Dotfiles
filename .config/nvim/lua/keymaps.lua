@@ -37,7 +37,7 @@ keymap.set('n', '<leader>e', function ()
 
   vim.ui.input(input_opts, function (target_path)
     if target_path then
-      vim.cmd(':e ' .. target_path)
+      vim.cmd(':tabedit ' .. target_path)
     end
   end)
 end, keymap_opts)
