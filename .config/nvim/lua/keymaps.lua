@@ -1,9 +1,8 @@
 local keymap = require('utils.keymap')
 
-keymap.set('n', '<leader>t', ':tabnew<CR>')
-
-keymap.set('n', 'bt', ':bnext<CR>')
-keymap.set('n', 'bT', ':bprev<CR>')
+keymap.set('n', '<leader>bd', ':bd<cr>')
+keymap.set('n', '[b', ':bprev<cr>')
+keymap.set('n', ']b', ':bnext<cr>')
 
 keymap.set('v', '>', '>gv')
 keymap.set('v', '<', '<gv')
@@ -33,7 +32,7 @@ keymap.set('n', '<leader>e', function ()
 
   vim.ui.input(input_opts, function (target_path)
     if target_path then
-      vim.cmd(':tabedit ' .. target_path)
+      vim.cmd(':e ' .. target_path)
     end
   end)
 end)
