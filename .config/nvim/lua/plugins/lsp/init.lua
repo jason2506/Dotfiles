@@ -16,6 +16,7 @@ local lsp_buf = vim.lsp.buf
 
 local function on_attach (_, bufnr)
   local keymap_opts = { buffer = bufnr }
+  keymap.set('n', '<leader>fs', telescope_builtin.lsp_dynamic_workspace_symbols, keymap_opts)
   keymap.set('n', 'gd', telescope_builtin.lsp_definitions, keymap_opts)
   keymap.set('n', 'gi', telescope_builtin.lsp_implementations, keymap_opts)
   keymap.set('n', 'gr', telescope_builtin.lsp_references, keymap_opts)
