@@ -4,6 +4,11 @@ keymap.set('n', '<leader>bd', ':bd<cr>')
 keymap.set('n', '[b', ':bprev<cr>')
 keymap.set('n', ']b', ':bnext<cr>')
 
+local diagnostic = vim.diagnostic
+keymap.set('n', '<space>e', diagnostic.open_float)
+keymap.set('n', '[d', diagnostic.goto_prev)
+keymap.set('n', ']d', diagnostic.goto_next)
+
 keymap.set('v', '>', '>gv')
 keymap.set('v', '<', '<gv')
 

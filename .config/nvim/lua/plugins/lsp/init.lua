@@ -11,11 +11,6 @@ local lsp_servers = {
 }
 
 local keymap = require('utils.keymap')
-local diagnostic = vim.diagnostic
-keymap.set('n', '<space>e', diagnostic.open_float)
-keymap.set('n', '[d', diagnostic.goto_prev)
-keymap.set('n', ']d', diagnostic.goto_next)
-
 local telescope_builtin = require('telescope.builtin')
 local lsp_buf = vim.lsp.buf
 
