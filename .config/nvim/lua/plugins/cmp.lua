@@ -6,6 +6,42 @@ local function has_words_before()
   return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match('%s') == nil
 end
 
+local kind_icons = {
+  Text = '',
+  Method = '',
+  Function = '',
+  Constructor = '',
+  Field = '',
+  Variable = '',
+  Class = 'ﴯ',
+  Interface = '',
+  Module = '',
+  Property = 'ﰠ',
+  Unit = '',
+  Value = '',
+  Enum = '',
+  Keyword = '',
+  Snippet = '',
+  Color = '',
+  File = '',
+  Reference = '',
+  Folder = '',
+  EnumMember = '',
+  Constant = '',
+  Struct = '',
+  Event = '',
+  Operator = '',
+  TypeParameter = ''
+}
+
+local source_names = {
+  nvim_lsp = '[LSP]',
+  luasnip = '[LuaSnip]',
+  buffer = '[Buffer]',
+  path = '[Path]',
+  emoji = '[Emoji]',
+}
+
 cmp.setup({
   snippet = {
     expand = function(args)
@@ -40,7 +76,15 @@ cmp.setup({
     { name = 'buffer' },
     { name = 'path' },
     { name = 'emoji' },
-  })
+  }),
+  formatting = {
+    format = function(entry, vim_item)
+      local vim_item_kind = vim_item.kind
+      vim_item.kind = string.format('%s %s', kind_icons[vim_item_kind], vim_item_kind)
+      vim_item.menu = source_names[entry.source.name]
+      return vim_item
+    end
+  },
 })
 
 -- Set configuration for git commit
