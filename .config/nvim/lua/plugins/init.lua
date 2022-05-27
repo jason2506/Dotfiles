@@ -70,6 +70,7 @@ local function setup_packer (use)
       -- snippets
       { 'L3MON4D3/LuaSnip' },
       { 'saadparwaiz1/cmp_luasnip', after = 'nvim-cmp' },
+      { 'rafamadriz/friendly-snippets' },
     },
     config = [[ require('plugins.cmp') ]],
   })
