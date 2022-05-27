@@ -68,8 +68,8 @@ local function setup_packer (use)
       { 'hrsh7th/cmp-nvim-lua', after = 'nvim-cmp' },
       { 'hrsh7th/cmp-path', after = 'nvim-cmp' },
       -- snippets
-      { 'hrsh7th/cmp-vsnip', after = 'nvim-cmp' },
-      { 'hrsh7th/vim-vsnip' },
+      { 'L3MON4D3/LuaSnip' },
+      { 'saadparwaiz1/cmp_luasnip', after = 'nvim-cmp' },
     },
     config = [[ require('plugins.cmp') ]],
   })
