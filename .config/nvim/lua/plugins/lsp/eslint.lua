@@ -1,5 +1,5 @@
 vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = { '*.jsx?', '*.tsx?' },
+  pattern = { '*.js', '*.jsx', '*.ts', '*.tsx' },
   command = 'EslintFixAll',
 })
 
