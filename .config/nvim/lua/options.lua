@@ -58,9 +58,9 @@ au({ 'BufNewFile', 'BufFilePre', 'BufRead' }, {
     '*.yaml',
     '*.yml',
   },
-  callback = function ()
+  callback = function()
     bo.tabstop = 2
     bo.shiftwidth = 2
     bo.softtabstop = 2
-  end
+  end,
 })

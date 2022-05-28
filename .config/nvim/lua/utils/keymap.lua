@@ -6,7 +6,7 @@ local default_opts = {
   silent = true,
 }
 
-function M.set (mode, lhs, rhs, opts)
+function M.set(mode, lhs, rhs, opts)
   local keymap_opts = default_opts
   if opts then
     keymap_opts = vim.tbl_extend('force', keymap_opts, opts)

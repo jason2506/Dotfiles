@@ -1,4 +1,4 @@
-local function setup_packer (use)
+local function setup_packer(use)
   -- Package manager
   use({ 'wbthomason/packer.nvim' })
 
@@ -20,11 +20,11 @@ local function setup_packer (use)
   })
   use({
     'akinsho/bufferline.nvim',
-    tag = "v2.*",
+    tag = 'v2.*',
     requires = {
       'kyazdani42/nvim-web-devicons',
     },
-    config = [[ require('plugins.bufferline') ]]
+    config = [[ require('plugins.bufferline') ]],
   })
   use({
     'lukas-reineke/indent-blankline.nvim',
@@ -51,7 +51,7 @@ local function setup_packer (use)
   use({
     'nvim-treesitter/nvim-treesitter-context',
     after = 'nvim-treesitter',
-    config = function ()
+    config = function()
       require('treesitter-context').setup()
     end,
   })
@@ -94,18 +94,18 @@ local function setup_packer (use)
   })
 
   -- Terminal Integration
-  use {
+  use({
     'akinsho/toggleterm.nvim',
     tag = 'v1.*',
     config = [[ require('plugins.toggleterm') ]],
-  }
+  })
 
   -- Jump
-  use {
+  use({
     'phaazon/hop.nvim',
     branch = 'v1',
     config = [[ require('plugins.hop') ]],
-  }
+  })
   use({
     'nvim-telescope/telescope.nvim',
     requires = {
@@ -122,7 +122,12 @@ local fn = vim.fn
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
   fn.system({
-    'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path,
+    'git',
+    'clone',
+    '--depth',
+    '1',
+    'https://github.com/wbthomason/packer.nvim',
+    install_path,
   })
 end
 

@@ -9,11 +9,11 @@ local function set_hop_hint_keymap(map_key, opts)
     inclusive_jump = true,
   })
 
-  keymap.set({ 'n', 'v' }, map_key, function ()
+  keymap.set({ 'n', 'v' }, map_key, function()
     hop.hint_char1(opts)
   end)
 
-  keymap.set('o', map_key, function ()
+  keymap.set('o', map_key, function()
     vim.opt_local.virtualedit = 'onemore'
     hop.hint_char1(inclusive_opts)
     vim.opt_local.virtualedit = ''

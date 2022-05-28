@@ -12,7 +12,7 @@ keymap.set('n', ']d', diagnostic.goto_next)
 keymap.set('v', '>', '>gv')
 keymap.set('v', '<', '<gv')
 
-keymap.set('n', '<leader>cd', function ()
+keymap.set('n', '<leader>cd', function()
   local default_path = vim.fn.expand('%:~:.:h')
   local input_opts = {
     prompt = 'Set working directory: ',
@@ -20,14 +20,14 @@ keymap.set('n', '<leader>cd', function ()
     completion = 'dir',
   }
 
-  vim.ui.input(input_opts, function (target_path)
+  vim.ui.input(input_opts, function(target_path)
     if target_path then
       vim.api.nvim_set_current_dir(target_path)
     end
   end)
 end)
 
-keymap.set('n', '<leader>e', function ()
+keymap.set('n', '<leader>e', function()
   local default_path = vim.fn.expand('%:~:.')
   local input_opts = {
     prompt = 'Edit file: ',
@@ -35,7 +35,7 @@ keymap.set('n', '<leader>e', function ()
     completion = 'file',
   }
 
-  vim.ui.input(input_opts, function (target_path)
+  vim.ui.input(input_opts, function(target_path)
     if target_path then
       vim.cmd(':e ' .. target_path)
     end

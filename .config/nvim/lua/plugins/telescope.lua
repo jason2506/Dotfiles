@@ -20,11 +20,13 @@ telescope.setup({
   pickers = {
     find_files = {
       find_command = {
-        'rg', '--hidden', '--files',
+        'rg',
+        '--hidden',
+        '--files',
       },
     },
     live_grep = {
-      additional_args = function ()
+      additional_args = function()
         -- allow hidden files to be grepped
         return { '--hidden' }
       end,
@@ -45,11 +47,14 @@ telescope.load_extension('file_browser')
 telescope.load_extension('ui-select')
 
 keymap.set('n', '<leader>ff', builtin.find_files)
-keymap.set('n', '<leader>fa', function ()
+keymap.set('n', '<leader>fa', function()
   builtin.find_files({
     find_command = {
-      'rg', '--hidden', '--no-ignore', '--files',
-    }
+      'rg',
+      '--hidden',
+      '--no-ignore',
+      '--files',
+    },
   })
 end)
 keymap.set('n', '<leader>f.', telescope.extensions.file_browser.file_browser)

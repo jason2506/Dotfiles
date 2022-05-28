@@ -10,7 +10,7 @@ local keymap_opts = {
 
 au('TermOpen', {
   pattern = 'term://*',
-  callback = function ()
+  callback = function()
     keymap.set('t', '<c-w>h', '<c-\\><c-n><c-w>h', keymap_opts)
     keymap.set('t', '<c-w>j', '<c-\\><c-n><c-w>j', keymap_opts)
     keymap.set('t', '<c-w>k', '<c-\\><c-n><c-w>k', keymap_opts)
@@ -23,5 +23,5 @@ au('TermOpen', {
 
     keymap.set('t', '<c-w>[', '<c-\\><c-n>', keymap_opts)
     keymap.set('n', 'q', 'i', keymap_opts)
-  end
+  end,
 })

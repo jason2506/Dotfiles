@@ -14,7 +14,7 @@ local keymap = require('utils.keymap')
 local telescope_builtin = require('telescope.builtin')
 local lsp_buf = vim.lsp.buf
 
-local function on_attach (_, bufnr)
+local function on_attach(_, bufnr)
   local keymap_opts = { buffer = bufnr }
   keymap.set('n', '<leader>fs', telescope_builtin.lsp_dynamic_workspace_symbols, keymap_opts)
   keymap.set('n', 'gd', telescope_builtin.lsp_definitions, keymap_opts)
@@ -38,7 +38,7 @@ for server_name, server_opts in pairs(lsp_servers) do
   server_opts.capabilities = capabilities
   server_opts.on_attach = on_attach
   server_opts.flags = {
-    debounce_text_changes = 150
+    debounce_text_changes = 150,
   }
 
   lspconfig[server_name].setup(server_opts)

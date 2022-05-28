@@ -31,7 +31,7 @@ local kind_icons = {
   Struct = '',
   Event = '',
   Operator = '',
-  TypeParameter = ''
+  TypeParameter = '',
 }
 
 local source_names = {
@@ -83,7 +83,7 @@ cmp.setup({
       vim_item.kind = string.format('%s %s', kind_icons[vim_item_kind], vim_item_kind)
       vim_item.menu = source_names[entry.source.name]
       return vim_item
-    end
+    end,
   },
 })
 
@@ -93,7 +93,7 @@ cmp.setup.filetype('gitcommit', {
     { name = 'cmp_git' },
   }, {
     { name = 'buffer' },
-  })
+  }),
 })
 
 -- Use buffer source for `/`
@@ -101,17 +101,17 @@ cmp.setup.cmdline('/', {
   mapping = cmp.mapping.preset.cmdline(),
   sources = {
     { name = 'buffer' },
-  }
+  },
 })
 
 -- Use cmdline & path source for ':'
 cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline(),
-  sources = cmp.config.sources( {
+  sources = cmp.config.sources({
     { name = 'path' },
   }, {
     { name = 'cmdline' },
-  })
+  }),
 })
 
 require('luasnip.loaders.from_vscode').lazy_load()
