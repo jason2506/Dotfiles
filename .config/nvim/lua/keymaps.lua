@@ -5,7 +5,7 @@ keymap.set('n', '[b', ':bprev<cr>')
 keymap.set('n', ']b', ':bnext<cr>')
 
 local diagnostic = vim.diagnostic
-keymap.set('n', '<space>e', diagnostic.open_float)
+keymap.set('n', '<leader>ld', diagnostic.open_float)
 keymap.set('n', '[d', diagnostic.goto_prev)
 keymap.set('n', ']d', diagnostic.goto_next)
 

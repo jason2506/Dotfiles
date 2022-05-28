@@ -21,8 +21,8 @@ local function on_attach (_, bufnr)
   keymap.set('n', 'gi', telescope_builtin.lsp_implementations, keymap_opts)
   keymap.set('n', 'gr', telescope_builtin.lsp_references, keymap_opts)
   keymap.set('n', 'K', lsp_buf.hover, keymap_opts)
-  keymap.set('n', '<space>ca', lsp_buf.code_action, keymap_opts)
-  keymap.set('n', '<space>rn', lsp_buf.rename, keymap_opts)
+  keymap.set('n', '<leader>la', lsp_buf.code_action, keymap_opts)
+  keymap.set('n', '<leader>lr', lsp_buf.rename, keymap_opts)
 end
 
 local lsp_installer = require('nvim-lsp-installer')
