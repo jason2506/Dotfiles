@@ -74,7 +74,6 @@ local function setup_packer(use)
     },
     config = [[ require('plugins.cmp') ]],
   })
-
   use({
     'neovim/nvim-lspconfig',
     after = 'cmp-nvim-lsp',
@@ -84,6 +83,14 @@ local function setup_packer(use)
       'ray-x/lsp_signature.nvim',
     },
     config = [[ require('plugins.lsp') ]],
+  })
+  use({
+    'jose-elias-alvarez/null-ls.nvim',
+    after = 'nvim-lspconfig',
+    requires = {
+      'nvim-lua/plenary.nvim',
+    },
+    config = [[ require('plugins.null-ls') ]],
   })
 
   -- Auto Pairs

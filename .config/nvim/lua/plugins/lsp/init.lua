@@ -4,7 +4,6 @@ local lsp_servers = {
 
   -- JacaScript / TypeScript
   tsserver = require('plugins.lsp.tsserver'),
-  eslint = require('plugins.lsp.eslint'),
 
   -- Python
   pyright = require('plugins.lsp.pyright'),
@@ -14,7 +13,7 @@ local keymap = require('utils.keymap')
 local telescope_builtin = require('telescope.builtin')
 local lsp_buf = vim.lsp.buf
 
-local function on_attach(_, bufnr)
+local function on_attach(client, bufnr)
   local keymap_opts = { buffer = bufnr }
   keymap.set('n', '<leader>fs', telescope_builtin.lsp_dynamic_workspace_symbols, keymap_opts)
   keymap.set('n', 'gd', telescope_builtin.lsp_definitions, keymap_opts)
@@ -23,6 +22,10 @@ local function on_attach(_, bufnr)
   keymap.set('n', 'K', lsp_buf.hover, keymap_opts)
   keymap.set('n', '<leader>la', lsp_buf.code_action, keymap_opts)
   keymap.set('n', '<leader>lr', lsp_buf.rename, keymap_opts)
+
+  -- Avoiding LSP formatting conflicts with null-ls
+  -- https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Avoiding-LSP-formatting-conflicts
+  client.resolved_capabilities.document_formatting = false
 end
 
 local lsp_installer = require('nvim-lsp-installer')
