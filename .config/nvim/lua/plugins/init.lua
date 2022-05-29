@@ -81,6 +81,7 @@ local function setup_packer(use)
       'williamboman/nvim-lsp-installer',
       'j-hui/fidget.nvim',
       'ray-x/lsp_signature.nvim',
+      'b0o/schemastore.nvim',
     },
     config = [[ require('plugins.lsp') ]],
   })

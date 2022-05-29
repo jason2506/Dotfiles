@@ -1,12 +1,18 @@
 local lsp_servers = {
-  -- Lua
-  sumneko_lua = require('plugins.lsp.sumneko_lua'),
-
   -- JacaScript / TypeScript
   tsserver = require('plugins.lsp.tsserver'),
 
+  -- JSON
+  jsonls = require('plugins.lsp.jsonls'),
+
+  -- Lua
+  sumneko_lua = require('plugins.lsp.sumneko_lua'),
+
   -- Python
   pyright = require('plugins.lsp.pyright'),
+
+  -- YAML
+  yamlls = require('plugins.lsp.yamlls'),
 }
 
 local keymap = require('utils.keymap')
