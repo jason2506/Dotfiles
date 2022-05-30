@@ -82,16 +82,14 @@ local function setup_packer(use)
       'j-hui/fidget.nvim',
       'ray-x/lsp_signature.nvim',
       'b0o/schemastore.nvim',
+      {
+        'jose-elias-alvarez/null-ls.nvim',
+        requires = {
+          'nvim-lua/plenary.nvim',
+        },
+      },
     },
     config = [[ require('plugins.lsp') ]],
-  })
-  use({
-    'jose-elias-alvarez/null-ls.nvim',
-    after = 'nvim-lspconfig',
-    requires = {
-      'nvim-lua/plenary.nvim',
-    },
-    config = [[ require('plugins.null-ls') ]],
   })
 
   -- Auto Pairs
