@@ -108,9 +108,11 @@ local function setup_packer(use)
 
   -- Jump
   use({
-    'phaazon/hop.nvim',
-    branch = 'v1',
-    config = [[ require('plugins.hop') ]],
+    'ggandor/lightspeed.nvim',
+    requires = {
+      'tpope/vim-repeat',
+    },
+    event = 'BufRead',
   })
   use({
     'nvim-telescope/telescope.nvim',
