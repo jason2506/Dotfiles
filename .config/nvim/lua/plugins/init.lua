@@ -8,6 +8,7 @@ local function setup_packer(use)
   -- User Interface
   use({
     'lewis6991/gitsigns.nvim',
+    event = 'BufEnter',
     config = [[ require('plugins.gitsigns') ]],
   })
   use({
@@ -96,6 +97,7 @@ local function setup_packer(use)
   use({
     'windwp/nvim-autopairs',
     after = 'nvim-cmp',
+    event = 'InsertEnter',
     config = [[ require('plugins.autopairs') ]],
   })
 
