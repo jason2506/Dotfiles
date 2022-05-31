@@ -43,7 +43,6 @@ o.softtabstop = 4
 au({ 'BufNewFile', 'BufFilePre', 'BufRead' }, {
   pattern = {
     '*.css',
-    '*.fish',
     '*.gql',
     '*.graphql',
     '*.html',
