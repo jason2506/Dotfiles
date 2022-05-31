@@ -1,6 +1,12 @@
 local lspconfig = require('lspconfig')
 
 local servers = {
+  -- CSS
+  cssls = require('plugins.lsp.servers.cssls'),
+
+  -- HTML
+  html = require('plugins.lsp.servers.html'),
+
   -- JacaScript / TypeScript
   tsserver = require('plugins.lsp.servers.tsserver'),
 
@@ -9,6 +15,9 @@ local servers = {
 
   -- Lua
   sumneko_lua = require('plugins.lsp.servers.sumneko_lua'),
+
+  -- Prisma
+  prismals = require('plugins.lsp.servers.prismals'),
 
   -- Python
   pyright = require('plugins.lsp.servers.pyright'),
