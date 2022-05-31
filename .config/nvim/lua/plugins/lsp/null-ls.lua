@@ -12,6 +12,9 @@ null_ls.setup({
     diagnostics.fish,
     formatting.fish_indent,
 
+    -- GitSigns
+    code_actions.gitsigns,
+
     -- JavaScript / TypeScript
     code_actions.eslint_d,
     formatting.eslint_d,

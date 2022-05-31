@@ -63,3 +63,5 @@ keymap.set('n', '<leader>fd', builtin.diagnostics)
 keymap.set('n', '<leader>fw', builtin.live_grep)
 keymap.set('n', '<leader>fh', builtin.help_tags)
 keymap.set('n', '<leader>ft', builtin.treesitter)
+
+keymap.set('n', '<leader>gs', builtin.git_status)
