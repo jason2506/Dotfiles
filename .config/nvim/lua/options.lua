@@ -66,3 +66,11 @@ au({ 'BufNewFile', 'BufFilePre', 'BufRead' }, {
     bo.softtabstop = 2
   end,
 })
+
+vim.diagnostic.config({
+  float = {
+    max_width = 100,
+    border = 'rounded',
+    source = 'always',
+  },
+})
