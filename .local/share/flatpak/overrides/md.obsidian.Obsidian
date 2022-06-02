@@ -1,7 +1,6 @@
 [Context]
-shared=!ipc;!network
-sockets=!ssh-auth;!pulseaudio
-filesystems=!/run/media;!/mnt;!/media;~/Documents/Obsidian;!home
+sockets=!ssh-auth;x11
+filesystems=!/run/media;!/mnt;!/media;~/Documents/Obsidian
 
 [Session Bus Policy]
 org.freedesktop.portal.Fcitx=none

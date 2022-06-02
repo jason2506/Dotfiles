@@ -1,7 +1,7 @@
 [Context]
-shared=!ipc
-sockets=!pulseaudio
-devices=!all;dri
+shared=network
+sockets=x11
+devices=dri
 filesystems=!xdg-public-share;!xdg-videos;!xdg-pictures;!xdg-download;!xdg-music;!xdg-desktop;!xdg-documents
 
 [Session Bus Policy]

@@ -1,7 +1,5 @@
 [Context]
-shared=!ipc
-sockets=!pulseaudio;!fallback-x11;!x11
-filesystems=!xdg-run/gvfsd;!host
+filesystems=!xdg-run/gvfsd
 
 [Session Bus Policy]
 org.gnome.SessionManager=none

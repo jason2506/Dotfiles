@@ -1,7 +1,5 @@
 [Context]
-shared=!ipc;!network
-sockets=!fallback-x11;!x11
-devices=!all
+sockets=pulseaudio
 filesystems=!xdg-run/gvfs;!xdg-run/gvfsd;!/run/media;!xdg-videos;!xdg-pictures;!xdg-download
 
 [System Bus Policy]

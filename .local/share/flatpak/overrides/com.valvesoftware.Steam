@@ -1,7 +1,9 @@
 [Context]
-devices=!all;dri
+shared=ipc;network
+sockets=pulseaudio;x11
+devices=dri
 features=!bluetooth
-filesystems=!xdg-music:ro;!xdg-pictures:ro;!xdg-run/app/com.discordapp.Discord:create
+filesystems=!xdg-music;!xdg-pictures;!xdg-run/app/com.discordapp.Discord
 
 [System Bus Policy]
 org.freedesktop.NetworkManager=none

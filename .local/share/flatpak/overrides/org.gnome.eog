@@ -1,7 +1,5 @@
 [Context]
-shared=!ipc
-sockets=!fallback-x11;!x11
-filesystems=!xdg-run/gvfs:ro;!host
+filesystems=!xdg-run/gvfs
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

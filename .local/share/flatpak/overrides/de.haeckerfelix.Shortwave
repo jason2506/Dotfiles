@@ -1,4 +1,4 @@
 [Context]
-shared=!ipc
-sockets=!fallback-x11;!x11
+shared=network
+sockets=pulseaudio
 filesystems=!xdg-music

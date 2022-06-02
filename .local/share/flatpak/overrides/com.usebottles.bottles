@@ -1,4 +1,5 @@
 [Context]
-shared=!network
-devices=!all;dri
+shared=ipc
+sockets=pulseaudio;x11
+devices=dri
 filesystems=~/Games

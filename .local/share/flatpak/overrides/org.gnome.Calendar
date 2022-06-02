@@ -1,7 +1,5 @@
 [Context]
-shared=!ipc
-sockets=!fallback-x11;!x11
-filesystems=!home
+shared=network
 
 [Session Bus Policy]
 org.gnome.OnlineAccounts=none

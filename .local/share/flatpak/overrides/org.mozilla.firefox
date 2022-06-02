@@ -1,7 +1,7 @@
 [Context]
-shared=!ipc
-sockets=!cups;!pcsc;!x11
-devices=!all;dri
+shared=network
+sockets=!cups;!pcsc;pulseaudio
+devices=dri
 filesystems=!xdg-download;~/.mozilla;~/Downloads/Firefox:create
 
 [System Bus Policy]
