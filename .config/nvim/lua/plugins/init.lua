@@ -22,9 +22,7 @@ local function setup_packer(use)
   use({
     'akinsho/bufferline.nvim',
     tag = 'v2.*',
-    requires = {
-      'kyazdani42/nvim-web-devicons',
-    },
+    requires = 'kyazdani42/nvim-web-devicons',
     config = [[ require('plugins.bufferline') ]],
   })
   use({
@@ -60,7 +58,7 @@ local function setup_packer(use)
   -- Completion & Linting
   use({
     'hrsh7th/nvim-cmp',
-    event = { 'InsertEnter' },
+    event = 'InsertEnter',
     requires = {
       -- sources
       { 'hrsh7th/cmp-buffer', after = 'nvim-cmp' },
@@ -85,9 +83,7 @@ local function setup_packer(use)
       'b0o/schemastore.nvim',
       {
         'jose-elias-alvarez/null-ls.nvim',
-        requires = {
-          'nvim-lua/plenary.nvim',
-        },
+        requires = 'nvim-lua/plenary.nvim',
       },
     },
     config = [[ require('plugins.lsp') ]],
@@ -111,9 +107,7 @@ local function setup_packer(use)
   -- Jump
   use({
     'ggandor/lightspeed.nvim',
-    requires = {
-      'tpope/vim-repeat',
-    },
+    requires = 'tpope/vim-repeat',
     event = 'BufRead',
   })
   use({
