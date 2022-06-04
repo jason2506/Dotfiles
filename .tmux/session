@@ -1,0 +1,2 @@
+splitw -v -p 25
+splitw -h -p 50

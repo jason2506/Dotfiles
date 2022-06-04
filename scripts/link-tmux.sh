@@ -5,3 +5,4 @@
 set -ex
 
 ln -s $root/.tmux.conf ~/.tmux.conf
+ln -s $root/.tmux ~/.tmux
