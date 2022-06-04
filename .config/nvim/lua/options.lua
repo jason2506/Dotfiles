@@ -9,6 +9,7 @@ o.swapfile = false
 o.number = true
 o.mouse = 'nv'
 o.clipboard = 'unnamedplus'
+o.laststatus = 3
 
 local wildignores = {
   '*.o',
