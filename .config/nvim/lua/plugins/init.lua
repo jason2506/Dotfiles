@@ -59,6 +59,7 @@ local function setup_packer(use)
   use({
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
+    module = 'cmp',
     requires = {
       -- sources
       { 'hrsh7th/cmp-buffer', after = 'nvim-cmp' },
@@ -92,7 +93,6 @@ local function setup_packer(use)
   -- Auto Pairs
   use({
     'windwp/nvim-autopairs',
-    after = 'nvim-cmp',
     event = 'InsertEnter',
     config = [[ require('plugins.autopairs') ]],
   })
