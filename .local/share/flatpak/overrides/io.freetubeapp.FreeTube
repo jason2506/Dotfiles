@@ -1,0 +1,5 @@
+[Context]
+shared=network
+sockets=!session-bus;pulseaudio;x11
+devices=!dri
+filesystems=!xdg-download
