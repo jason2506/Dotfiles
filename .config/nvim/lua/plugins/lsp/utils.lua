@@ -4,21 +4,20 @@ local keymap = require('utils.keymap')
 local telescope_builtin = require('telescope.builtin')
 local lsp_buf = vim.lsp.buf
 
-local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
-local formatting_disabled_clients = {
-  'tsserver',
-  'sumneko_lua',
-}
-
-local function is_formatting_disabled(client)
-  local client_name = client.name
-  for _, disabled_client_name in ipairs(formatting_disabled_clients) do
-    if client_name == disabled_client_name then
-      return true
-    end
-  end
-  return false
+-- Avoiding LSP formatting conflicts
+-- https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Avoiding-LSP-formatting-conflicts
+local lsp_formatting = function(bufnr)
+  vim.lsp.buf.format({
+    filter = function(client)
+      -- apply whatever logic you want (in this example, we'll only use null-ls)
+      return client.name == 'null-ls'
+    end,
+    bufnr = bufnr,
+  })
 end
+
+-- if you want to set up formatting on save, you can use this as a callback
+local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 
 function M.on_attach(client, bufnr)
   local keymap_opts = { buffer = bufnr }
@@ -30,22 +29,13 @@ function M.on_attach(client, bufnr)
   keymap.set('n', '<leader>la', lsp_buf.code_action, keymap_opts)
   keymap.set('n', '<leader>lr', lsp_buf.rename, keymap_opts)
 
-  if is_formatting_disabled(client) then
-    -- Avoiding LSP formatting conflicts
-    -- https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Avoiding-LSP-formatting-conflicts
-    client.resolved_capabilities.document_formatting = false
-  elseif client.resolved_capabilities.document_formatting then
-    vim.api.nvim_clear_autocmds({
-      group = augroup,
-      buffer = bufnr,
-    })
-
+  if client.supports_method('textDocument/formatting') then
+    vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
     vim.api.nvim_create_autocmd('BufWritePre', {
       group = augroup,
       buffer = bufnr,
       callback = function()
-        -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-        vim.lsp.buf.formatting_sync()
+        lsp_formatting(bufnr)
       end,
     })
   end

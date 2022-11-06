@@ -26,8 +26,7 @@ local servers = {
   yamlls = require('plugins.lsp.servers.yamlls'),
 }
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local on_attach = require('plugins.lsp.utils').on_attach
 for server_name, server_opts in pairs(servers) do

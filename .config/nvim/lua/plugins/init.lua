@@ -99,7 +99,6 @@ local function setup_packer(use)
   -- Terminal Integration
   use({
     'akinsho/toggleterm.nvim',
-    tag = 'v1.*',
     config = [[ require('plugins.toggleterm') ]],
   })
 
