@@ -1,4 +1,4 @@
-require('nvim-lsp-installer').setup({})
+require('mason').setup()
 require('lsp_signature').setup()
 require('fidget').setup()
 

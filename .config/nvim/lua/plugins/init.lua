@@ -77,7 +77,7 @@ local function setup_packer(use)
     'neovim/nvim-lspconfig',
     after = 'cmp-nvim-lsp',
     requires = {
-      'williamboman/nvim-lsp-installer',
+      'williamboman/mason.nvim',
       'j-hui/fidget.nvim',
       'ray-x/lsp_signature.nvim',
       'b0o/schemastore.nvim',
