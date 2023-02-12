@@ -1,6 +1,6 @@
 [Context]
 sockets=!ssh-auth;x11
-filesystems=!/run/media;!/mnt;!/media;~/Documents/Obsidian
+filesystems=!xdg-run/app/com.discordapp.Discord;!/run/media;!/mnt;!/media;~/Documents/Obsidian
 
 [Session Bus Policy]
 org.freedesktop.portal.Fcitx=none

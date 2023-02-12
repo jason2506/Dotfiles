@@ -1,5 +1,5 @@
 [Context]
-shared=ipc
+shared=ipc;network
 sockets=pulseaudio;x11
 devices=dri
-filesystems=~/Games
+filesystems=!xdg-download;~/Games

@@ -1,7 +1,7 @@
 [Context]
 shared=ipc;network
 sockets=pulseaudio;x11
-devices=dri
+devices=all;dri
 features=!bluetooth
 filesystems=!xdg-music;!xdg-pictures;!xdg-run/app/com.discordapp.Discord
 
