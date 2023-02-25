@@ -14,7 +14,7 @@ local servers = {
   jsonls = require('plugins.lsp.servers.jsonls'),
 
   -- Lua
-  sumneko_lua = require('plugins.lsp.servers.sumneko_lua'),
+  lua_ls = require('plugins.lsp.servers.lua_ls'),
 
   -- Prisma
   prismals = require('plugins.lsp.servers.prismals'),
