@@ -1,0 +1,2 @@
+[Context]
+filesystems=!xdg-run/speech-dispatcher;!xdg-config/kdeglobals;xdg-documents/Calibre

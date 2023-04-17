@@ -3,3 +3,7 @@ shared=network
 sockets=!session-bus;pulseaudio;x11
 devices=!dri
 filesystems=!xdg-download
+
+[Session Bus Policy]
+org.gnome.SessionManager=none
+org.gnome.SettingsDaemon=none

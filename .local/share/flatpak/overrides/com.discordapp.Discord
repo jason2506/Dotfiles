@@ -1,0 +1,5 @@
+[Context]
+shared=network
+sockets=x11
+devices=dri
+filesystems=!xdg-videos;!xdg-pictures;!xdg-download

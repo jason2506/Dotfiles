@@ -1,14 +1,14 @@
 [Context]
 shared=network
-sockets=!cups;!pcsc;pulseaudio
-devices=dri
-filesystems=!xdg-download;~/.mozilla;xdg-download/Firefox:create
+sockets=!cups;!pcsc
+filesystems=!xdg-download;!xdg-run/pipewire-0;xdg-download/MullvadBrowser:create
 
 [System Bus Policy]
 org.freedesktop.NetworkManager=none
+org.freedesktop.login1=none
 
 [Session Bus Policy]
+org.freedesktop.secrets=none
 org.freedesktop.FileManager1=none
 org.gtk.vfs.*=none
-org.a11y.Bus=none
 org.gnome.SessionManager=none

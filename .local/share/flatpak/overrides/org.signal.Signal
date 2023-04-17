@@ -1,6 +1,6 @@
 [Context]
 shared=network
-sockets=x11
+sockets=pulseaudio;x11
 devices=dri
 filesystems=!xdg-public-share;!xdg-videos;!xdg-pictures;!xdg-download;!xdg-music;!xdg-desktop;!xdg-documents
 
