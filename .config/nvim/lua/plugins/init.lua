@@ -1,43 +1,51 @@
-local function setup_packer(use)
-  -- Package manager
-  use({ 'wbthomason/packer.nvim' })
-
+local plugins = {
   -- Last Cursor Position
-  use({ 'farmergreg/vim-lastplace' })
+  { 'farmergreg/vim-lastplace' },
 
   -- User Interface
-  use({
+  {
     'lewis6991/gitsigns.nvim',
     event = 'BufEnter',
-    config = [[ require('plugins.gitsigns') ]],
-  })
-  use({
+    config = function()
+      require('plugins.gitsigns')
+    end,
+  },
+  {
     'folke/tokyonight.nvim',
-    config = [[ require('plugins.tokyonight') ]],
-  })
-  use({
+    config = function()
+      require('plugins.tokyonight')
+    end,
+  },
+  {
     'nvim-lualine/lualine.nvim',
-    config = [[ require('plugins.lualine') ]],
-  })
-  use({
+    config = function()
+      require('plugins.lualine')
+    end,
+  },
+  {
     'akinsho/bufferline.nvim',
-    tag = '*',
-    requires = 'kyazdani42/nvim-web-devicons',
-    config = [[ require('plugins.bufferline') ]],
-  })
-  use({
+    dependencies = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      require('plugins.bufferline')
+    end,
+  },
+  {
     'lukas-reineke/indent-blankline.nvim',
-    config = [[ require('plugins.indent-blankline') ]],
-  })
-  use({
+    config = function()
+      require('plugins.indent-blankline')
+    end,
+  },
+  {
     'rcarriga/nvim-notify',
-    config = [[ require('plugins.notify') ]],
-  })
+    config = function()
+      require('plugins.notify')
+    end,
+  },
 
   -- Syntax Parsing
-  use({
+  {
     'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate',
+    build = ':TSUpdate',
     event = {
       'CursorHold',
       'CursorMoved',
@@ -45,93 +53,96 @@ local function setup_packer(use)
       'BufRead',
       'InsertEnter',
     },
-    config = [[ require('plugins.treesitter') ]],
-  })
-  use({
-    'nvim-treesitter/nvim-treesitter-context',
-    after = 'nvim-treesitter',
     config = function()
-      require('treesitter-context').setup()
+      require('plugins.treesitter')
     end,
-  })
+  },
+  { 'nvim-treesitter/nvim-treesitter-context' },
 
   -- Completion & Linting
-  use({
+  {
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
-    requires = {
+    dependencies = {
       -- sources
-      { 'hrsh7th/cmp-buffer', after = 'nvim-cmp' },
-      { 'hrsh7th/cmp-cmdline', after = 'nvim-cmp' },
-      { 'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp' },
-      { 'hrsh7th/cmp-path', after = 'nvim-cmp' },
-      { 'hrsh7th/cmp-emoji', after = 'nvim-cmp' },
+      { 'hrsh7th/cmp-buffer' },
+      { 'hrsh7th/cmp-cmdline' },
+      { 'hrsh7th/cmp-nvim-lsp' },
+      { 'hrsh7th/cmp-path' },
+      { 'hrsh7th/cmp-emoji' },
       -- snippets
       { 'L3MON4D3/LuaSnip' },
-      { 'saadparwaiz1/cmp_luasnip', after = 'nvim-cmp' },
+      { 'saadparwaiz1/cmp_luasnip' },
       { 'rafamadriz/friendly-snippets' },
     },
-    config = [[ require('plugins.cmp') ]],
-  })
-  use({
+    config = function()
+      require('plugins.cmp')
+    end,
+  },
+  {
     'neovim/nvim-lspconfig',
-    after = 'cmp-nvim-lsp',
-    requires = {
+    dependencies = {
       'williamboman/mason.nvim',
       { 'j-hui/fidget.nvim', tag = 'legacy' },
       'ray-x/lsp_signature.nvim',
       'b0o/schemastore.nvim',
       {
         'jose-elias-alvarez/null-ls.nvim',
-        requires = 'nvim-lua/plenary.nvim',
+        dependencies = 'nvim-lua/plenary.nvim',
       },
     },
-    config = [[ require('plugins.lsp') ]],
-  })
+    config = function()
+      require('plugins.lsp')
+    end,
+  },
 
   -- Auto Pairs
-  use({
+  {
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
-    config = [[ require('plugins.autopairs') ]],
-  })
+    config = function()
+      require('plugins.autopairs')
+    end,
+  },
 
   -- Terminal Integration
-  use({
+  {
     'akinsho/toggleterm.nvim',
-    config = [[ require('plugins.toggleterm') ]],
-  })
+    config = function()
+      require('plugins.toggleterm')
+    end,
+  },
 
   -- Jump
-  use({
+  {
     'folke/flash.nvim',
-    config = function()
-      require('flash').setup()
-    end,
-  })
-  use({
+    event = 'VeryLazy',
+  },
+  {
     'nvim-telescope/telescope.nvim',
-    requires = {
+    dependencies = {
       'nvim-lua/plenary.nvim',
       'nvim-telescope/telescope-file-browser.nvim',
       'nvim-telescope/telescope-ui-select.nvim',
     },
-    config = [[ require('plugins.telescope') ]],
-  })
-end
+    config = function()
+      require('plugins.telescope')
+    end,
+  },
+}
 
--- Auto install packer.nvim
-local fn = vim.fn
-local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then
-  fn.system({
+-- Auto install lazy.nvim
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
     'git',
     'clone',
-    '--depth',
-    '1',
-    'https://github.com/wbthomason/packer.nvim',
-    install_path,
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', -- latest stable release
+    lazypath,
   })
 end
+vim.opt.rtp:prepend(lazypath)
 
-require('packer').startup(setup_packer)
+require('lazy').setup(plugins)
