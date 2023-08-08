@@ -5,7 +5,6 @@ local plugins = {
   -- User Interface
   {
     'lewis6991/gitsigns.nvim',
-    event = 'BufEnter',
     config = function()
       require('plugins.gitsigns')
     end,
@@ -51,13 +50,6 @@ local plugins = {
   {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-    event = {
-      'CursorHold',
-      'CursorMoved',
-      'BufNewFile',
-      'BufRead',
-      'InsertEnter',
-    },
     config = function()
       require('plugins.treesitter')
     end,
