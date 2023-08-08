@@ -104,9 +104,10 @@ local function setup_packer(use)
 
   -- Jump
   use({
-    'ggandor/lightspeed.nvim',
-    requires = 'tpope/vim-repeat',
-    event = 'BufRead',
+    'folke/flash.nvim',
+    config = function()
+      require('flash').setup()
+    end,
   })
   use({
     'nvim-telescope/telescope.nvim',
