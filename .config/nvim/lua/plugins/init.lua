@@ -13,7 +13,7 @@ local plugins = {
   {
     'folke/tokyonight.nvim',
     config = function()
-      require('plugins.tokyonight')
+      vim.cmd('colorscheme tokyonight')
     end,
   },
   {
@@ -25,15 +25,20 @@ local plugins = {
   {
     'akinsho/bufferline.nvim',
     dependencies = 'kyazdani42/nvim-web-devicons',
-    config = function()
-      require('plugins.bufferline')
+    opts = {
+      options = {
+        diagnostics = 'nvim_lsp',
+      },
+    },
+    init = function()
+      vim.opt.termguicolors = true
     end,
   },
   {
     'lukas-reineke/indent-blankline.nvim',
-    config = function()
-      require('plugins.indent-blankline')
-    end,
+    opts = {
+      show_current_context = true,
+    },
   },
   {
     'rcarriga/nvim-notify',
@@ -100,9 +105,9 @@ local plugins = {
   {
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
-    config = function()
-      require('plugins.autopairs')
-    end,
+    opts = {
+      check_ts = true,
+    },
   },
 
   -- Terminal Integration
