@@ -1,3 +1,4 @@
 [Context]
 shared=network
+sockets=pulseaudio
 filesystems=!xdg-download;xdg-download/TorBrowser:create

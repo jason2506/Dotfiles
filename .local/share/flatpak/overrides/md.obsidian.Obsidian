@@ -3,5 +3,5 @@ sockets=!ssh-auth;x11
 devices=!dri
 filesystems=!xdg-run/app/com.discordapp.Discord;!/run/media;!/mnt;!/media;xdg-documents/Obsidian
 
-[Session Bus Policy]
-org.freedesktop.portal.Fcitx=none
+[Environment]
+OBSIDIAN_DISABLE_GPU=1

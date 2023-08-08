@@ -1,8 +1,7 @@
 [Context]
 shared=network
 sockets=pulseaudio;x11
-devices=dri
-filesystems=!xdg-public-share;!xdg-videos;!xdg-pictures;!xdg-download;!xdg-music;!xdg-desktop;!xdg-documents
+filesystems=!xdg-documents;!xdg-desktop;!xdg-music;!xdg-download;!xdg-pictures;!xdg-videos;!xdg-public-share
 
-[Session Bus Policy]
-org.freedesktop.portal.Fcitx=none
+[Environment]
+SIGNAL_DISABLE_GPU=1

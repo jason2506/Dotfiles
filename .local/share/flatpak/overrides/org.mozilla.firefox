@@ -2,7 +2,7 @@
 shared=network
 sockets=!cups;!pcsc;pulseaudio
 devices=dri
-filesystems=!xdg-download;~/.mozilla;xdg-download/Firefox:create
+filesystems=!xdg-download;xdg-download/Firefox:create;~/.mozilla
 
 [System Bus Policy]
 org.freedesktop.NetworkManager=none

@@ -1,6 +1,6 @@
 [Context]
 shared=network
-sockets=!cups;!pcsc
+sockets=!cups;!pcsc;pulseaudio
 filesystems=!xdg-download;!xdg-run/pipewire-0;xdg-download/MullvadBrowser:create
 
 [System Bus Policy]

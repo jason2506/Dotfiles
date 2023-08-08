@@ -4,6 +4,3 @@ sockets=pulseaudio;x11
 devices=all;dri
 features=!bluetooth
 filesystems=!xdg-music;!xdg-pictures;!xdg-run/app/com.discordapp.Discord
-
-[System Bus Policy]
-org.freedesktop.NetworkManager=none
