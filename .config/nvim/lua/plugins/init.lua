@@ -21,7 +21,7 @@ local function setup_packer(use)
   })
   use({
     'akinsho/bufferline.nvim',
-    tag = 'v2.*',
+    tag = '*',
     requires = 'kyazdani42/nvim-web-devicons',
     config = [[ require('plugins.bufferline') ]],
   })
@@ -78,7 +78,7 @@ local function setup_packer(use)
     after = 'cmp-nvim-lsp',
     requires = {
       'williamboman/mason.nvim',
-      'j-hui/fidget.nvim',
+      { 'j-hui/fidget.nvim', tag = 'legacy' },
       'ray-x/lsp_signature.nvim',
       'b0o/schemastore.nvim',
       {
