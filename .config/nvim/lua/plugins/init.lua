@@ -5,6 +5,7 @@ local plugins = {
   -- User Interface
   {
     'lewis6991/gitsigns.nvim',
+    event = { 'BufReadPre', 'BufNewFile' },
     config = function()
       require('plugins.gitsigns')
     end,
@@ -17,12 +18,14 @@ local plugins = {
   },
   {
     'nvim-lualine/lualine.nvim',
+    event = 'VeryLazy',
     config = function()
       require('plugins.lualine')
     end,
   },
   {
     'akinsho/bufferline.nvim',
+    event = 'VeryLazy',
     dependencies = 'kyazdani42/nvim-web-devicons',
     opts = {
       options = {
@@ -35,6 +38,7 @@ local plugins = {
   },
   {
     'lukas-reineke/indent-blankline.nvim',
+    event = { 'BufReadPost', 'BufNewFile' },
     opts = {
       show_current_context = true,
     },
@@ -50,6 +54,8 @@ local plugins = {
   {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
+    event = { 'BufReadPost', 'BufNewFile' },
+    cmd = { 'TSUpdateSync' },
     config = function()
       require('plugins.treesitter')
     end,
@@ -78,13 +84,23 @@ local plugins = {
   },
   {
     'neovim/nvim-lspconfig',
+    event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
-      'williamboman/mason.nvim',
-      { 'j-hui/fidget.nvim', tag = 'legacy' },
+      {
+        'williamboman/mason.nvim',
+        cmd = 'Mason',
+        build = ':MasonUpdate',
+      },
+      {
+        'j-hui/fidget.nvim',
+        tag = 'legacy',
+        event = 'LspAttach',
+      },
       'ray-x/lsp_signature.nvim',
       'b0o/schemastore.nvim',
       {
         'jose-elias-alvarez/null-ls.nvim',
+        event = { 'BufReadPre', 'BufNewFile' },
         dependencies = 'nvim-lua/plenary.nvim',
       },
     },
