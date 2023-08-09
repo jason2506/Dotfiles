@@ -130,6 +130,16 @@ local plugins = {
   {
     'folke/flash.nvim',
     event = 'VeryLazy',
+    opts = {
+      modes = {
+        char = {
+          jump_labels = true,
+        },
+        search = {
+          enabled = false,
+        },
+      },
+    },
   },
   {
     'nvim-telescope/telescope.nvim',
