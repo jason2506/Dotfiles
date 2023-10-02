@@ -1,13 +1,13 @@
 [Context]
 sockets=pulseaudio;x11
-devices=all
-filesystems=!xdg-run/gvfs;!xdg-config/kdeglobals;/run/media/user:ro
+devices=all;dri
+filesystems=!xdg-run/gvfs;!xdg-config/kdeglobals;/run/media/user:ro;xdg-videos/VLC
 
 [Session Bus Policy]
-org.freedesktop.Notifications=none
+org.kde.kwalletd5=none
 org.kde.kwalletd=none
 org.freedesktop.secrets=none
-org.kde.kwalletd5=none
 org.kde.KGlobalSettings=none
 com.canonical.AppMenu.Registrar=none
 org.kde.kconfig.notify=none
+org.freedesktop.Notifications=none

@@ -1,7 +1,7 @@
 [Context]
 sockets=!ssh-auth;x11
 devices=!dri
-filesystems=!xdg-run/app/com.discordapp.Discord;!/run/media;!/mnt;!/media;xdg-documents/Obsidian
+filesystems=!xdg-run/app/com.discordapp.Discord;!/run/media;!/mnt;!xdg-run/gnupg;!/media;xdg-documents/Obsidian
 
 [Environment]
 OBSIDIAN_DISABLE_GPU=1

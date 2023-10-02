@@ -1,7 +1,7 @@
 [Context]
 shared=network
 sockets=pulseaudio;x11
-filesystems=!xdg-documents;!xdg-desktop;!xdg-music;!xdg-download;!xdg-pictures;!xdg-videos;!xdg-public-share
+filesystems=!xdg-public-share;!xdg-videos;!xdg-pictures;!xdg-download;!xdg-music;!xdg-desktop;!xdg-documents
 
 [Environment]
 SIGNAL_DISABLE_GPU=1
