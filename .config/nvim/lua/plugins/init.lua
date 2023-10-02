@@ -39,9 +39,8 @@ local plugins = {
   {
     'lukas-reineke/indent-blankline.nvim',
     event = { 'BufReadPost', 'BufNewFile' },
-    opts = {
-      show_current_context = true,
-    },
+    main = 'ibl',
+    opts = {},
   },
   {
     'rcarriga/nvim-notify',
@@ -88,8 +87,6 @@ local plugins = {
     dependencies = {
       {
         'williamboman/mason.nvim',
-        cmd = 'Mason',
-        build = ':MasonUpdate',
       },
       {
         'j-hui/fidget.nvim',
